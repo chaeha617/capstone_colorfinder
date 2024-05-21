@@ -1,0 +1,5285 @@
+[
+  {
+    "productId": "DE000",
+    "productName": "카고 데님 쇼츠(BLACK)",
+    "productPrice": 38500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE001",
+    "productName": "카고 데님 쇼츠(VINTAGE INDIGO)",
+    "productPrice": 55400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE002",
+    "productName": "슬럽 데님 버뮤다 쇼츠(INDIGO)",
+    "productPrice": 43800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE003",
+    "productName": "슬럽 데님 버뮤다 쇼츠(WHITE)",
+    "productPrice": 62300,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE004",
+    "productName": "슬럽 데님 버뮤다 쇼츠(NAVY)",
+    "productPrice": 40100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE005",
+    "productName": "데일리지 슬림 진(LIGHT INDIGO)",
+    "productPrice": 23600,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE006",
+    "productName": "데일리지 슬림 진(INDIGO)",
+    "productPrice": 30700,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE007",
+    "productName": "데일리지 웜 슬림 진(DARK INDIGO)",
+    "productPrice": 35900,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE008",
+    "productName": "데일리지 웜 슬림 진(NAVY)",
+    "productPrice": 58200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE009",
+    "productName": "데일리지 슬림 진",
+    "productPrice": 53100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE010",
+    "productName": "COOL 테이퍼드 진(NAVY)",
+    "productPrice": 31400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE011",
+    "productName": "COOL 테이퍼드 진(INDIGO)",
+    "productPrice": 27600,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE012",
+    "productName": "데일리지 테이퍼드 진(DARK INDIGO)",
+    "productPrice": 23700,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE013",
+    "productName": "데일리지 테이퍼드 진(INDIGO)",
+    "productPrice": 56400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE014",
+    "productName": "데일리지 테이퍼드 진(CREAM)",
+    "productPrice": 52800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE015",
+    "productName": "데일리지 테이퍼드 진(NAVY)",
+    "productPrice": 55500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE016",
+    "productName": "데일리지 웜 테이퍼드 진(INDIGO)",
+    "productPrice": 35500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE017",
+    "productName": "데일리지 웜 테이퍼드 진(CREAM)",
+    "productPrice": 47300,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE018",
+    "productName": "데일리지 웜 테이퍼드 진(NAVY)",
+    "productPrice": 52200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE019",
+    "productName": "데일리지 웜 테이퍼드 진(DARK GRAY)",
+    "productPrice": 33800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE020",
+    "productName": "데일리지 테이퍼드 진(NAVY)",
+    "productPrice": 21200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE021",
+    "productName": "데일리지 테이퍼드 진(DARK INDIGO)",
+    "productPrice": 47900,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE022",
+    "productName": "데일리지 테이퍼드 진(LIGHT INDIGO)",
+    "productPrice": 45000,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE023",
+    "productName": "데일리지 테이퍼드 진(INDIGO)",
+    "productPrice": 20100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE024",
+    "productName": "데일리지 테이퍼드 진(BLACK)",
+    "productPrice": 39900,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE025",
+    "productName": "COOL 스트레이트 진(INDIGO)",
+    "productPrice": 44200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE026",
+    "productName": "데일리지 스트레이트 진(NAVY)",
+    "productPrice": 53000,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE027",
+    "productName": "데일리지 스트레이트 진(DARK INDIGO)",
+    "productPrice": 35100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE028",
+    "productName": "데일리지 스트레이트 진(LIGHT INDIGO)",
+    "productPrice": 42000,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE029",
+    "productName": "데일리지 셀비지 스트레이트 진",
+    "productPrice": 22100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE030",
+    "productName": "데일리지 웜 스트레이트 진(NAVY)",
+    "productPrice": 49200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE031",
+    "productName": "데일리지 웜 스트레이트 진(DARK INDIGO)",
+    "productPrice": 49600,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE032",
+    "productName": "데일리지 셀비지 스트레이트 진",
+    "productPrice": 54800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE033",
+    "productName": "데일리지 루즈핏 진",
+    "productPrice": 26500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE034",
+    "productName": "데일리지 스트레이트 진",
+    "productPrice": 26100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE035",
+    "productName": "카고 와이드 데님(BLACK)",
+    "productPrice": 41600,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE036",
+    "productName": "카고 와이드 데님(VINTAGE INDIGO)",
+    "productPrice": 50400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE037",
+    "productName": "데일리지 와이드 진(LIGHT INDIGO)",
+    "productPrice": 31100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE038",
+    "productName": "데일리지 와이드 진(WHITE)",
+    "productPrice": 44400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE039",
+    "productName": "빈티지 와이드 진(DARK GRAY)",
+    "productPrice": 58100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE040",
+    "productName": "데일리지 롱 와이드 진(+5CM)(NAVY)",
+    "productPrice": 51700,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE041",
+    "productName": "데일리지 롱 와이드 진(+5CM)(LIGHT INDIGO)",
+    "productPrice": 44200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE042",
+    "productName": "데일리지 와이드 진(VINTAGE INDIGO)",
+    "productPrice": 49900,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE043",
+    "productName": "데일리지 와이드 진(INDIGO)",
+    "productPrice": 26700,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE044",
+    "productName": "카펜터 와이드 진 (SPTJD4VC95 RE)",
+    "productPrice": 58300,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE045",
+    "productName": "투턱 와이드 밴딩 진 (셋업)(NAVY)",
+    "productPrice": 28200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE046",
+    "productName": "투턱 와이드 밴딩 진 (셋업)(DARK GRAY)",
+    "productPrice": 43900,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE047",
+    "productName": "데일리지 와이드 진(BLACK)",
+    "productPrice": 26200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE048",
+    "productName": "데일리지 와이드 진(NAVY)",
+    "productPrice": 39400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE049",
+    "productName": "빈티지 와이드 진(BLACK)",
+    "productPrice": 24700,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE050",
+    "productName": "데일리지 웜 와이드 진(INDIGO)",
+    "productPrice": 41300,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE051",
+    "productName": "데일리지 웜 와이드 진(NAVY)",
+    "productPrice": 22600,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE052",
+    "productName": "데일리지 웜 와이드 진(IVORY)",
+    "productPrice": 31200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE053",
+    "productName": "데일리지 스트레이트 진(CREAM)",
+    "productPrice": 33900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE054",
+    "productName": "데일리지 스트레이트 진(LIGHT INDIGO)",
+    "productPrice": 46900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE055",
+    "productName": "데일리지 스트레이트 진(DARK GRAY)",
+    "productPrice": 59800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE056",
+    "productName": "데일리지 스트레이트 진(NAVY)",
+    "productPrice": 49600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE057",
+    "productName": "데일리지 웜 스트레이트 진(NAVY)",
+    "productPrice": 25000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE058",
+    "productName": "데일리지 웜 스트레이트 진(CREAM)",
+    "productPrice": 45600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE059",
+    "productName": "데일리지 웜 스트레이트 진(DARK GRAY)",
+    "productPrice": 27100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE060",
+    "productName": "데일리지 스트레이트 진(NAVY)",
+    "productPrice": 28600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE061",
+    "productName": "데일리지 스트레이트 진(INDIGO)",
+    "productPrice": 51200,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE062",
+    "productName": "데일리지 스트레이트 진(DARK GRAY)",
+    "productPrice": 41200,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE063",
+    "productName": "데일리지 스트레이트 진(CREAM)",
+    "productPrice": 51200,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE064",
+    "productName": "COOL 부츠컷 진(BLACK)",
+    "productPrice": 29400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE065",
+    "productName": "데일리지 세미 부츠컷 진(DARK GRAY)",
+    "productPrice": 24600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE066",
+    "productName": "데일리지 세미 부츠컷 진(NAVY)",
+    "productPrice": 46400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE067",
+    "productName": "데일리지 세미 부츠컷 진(LIGHT INDIGO)",
+    "productPrice": 23000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE068",
+    "productName": "데일리지 세미 부츠컷 진(INDIGO)",
+    "productPrice": 24600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE069",
+    "productName": "빈티지 롱 부츠컷 진(VINTAGE INDIGO)",
+    "productPrice": 43700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE070",
+    "productName": "빈티지 롱 부츠컷 진(BLACK)",
+    "productPrice": 59000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE071",
+    "productName": "데일리지 부츠컷 진(ASH INDIGO)",
+    "productPrice": 48000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE072",
+    "productName": "데일리지 부츠컷 진(NAVY)",
+    "productPrice": 32700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE073",
+    "productName": "데일리지 세미 부츠컷 진(NAVY)",
+    "productPrice": 59800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE074",
+    "productName": "데일리지 세미 부츠컷 진(LIGHT INDIGO)",
+    "productPrice": 49100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE075",
+    "productName": "데일리지 세미 부츠컷 진(INDIGO)",
+    "productPrice": 58900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE076",
+    "productName": "데일리지 세미 부츠컷 진(DARK GRAY)",
+    "productPrice": 33100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE077",
+    "productName": "데일리지 웜 부츠컷 진(INDIGO)",
+    "productPrice": 33800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE078",
+    "productName": "데일리지 웜 부츠컷 진(GRAY)",
+    "productPrice": 38500,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE079",
+    "productName": "데일리지 롱 부츠컷 진",
+    "productPrice": 53400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE080",
+    "productName": "데일리지 슬림 진(ASH INDIGO)",
+    "productPrice": 46600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE081",
+    "productName": "데일리지 슬림 진(BLACK)",
+    "productPrice": 26500,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE082",
+    "productName": "데일리지 웜 슬림 진(BLACK)",
+    "productPrice": 35000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE083",
+    "productName": "데일리지 웜 슬림 진(INDIGO)",
+    "productPrice": 22400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE084",
+    "productName": "데일리지 슬림 진",
+    "productPrice": 31700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE085",
+    "productName": "COOL 와이드 진(INDIGO)",
+    "productPrice": 43400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE086",
+    "productName": "COOL 와이드 진(LIGHT INDIGO)",
+    "productPrice": 43100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE087",
+    "productName": "카고 와이드 데님(WHITE)",
+    "productPrice": 28000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE088",
+    "productName": "오버롤 데님 팬츠(NAVY)",
+    "productPrice": 55800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE089",
+    "productName": "카고 와이드 데님(VINTAGE INDIGO)",
+    "productPrice": 52100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE090",
+    "productName": "카고 와이드 데님(DARK GRAY)",
+    "productPrice": 25100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE091",
+    "productName": "오버롤 데님 팬츠(WHITE)",
+    "productPrice": 27900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE092",
+    "productName": "오버롤 데님 팬츠(INDIGO)",
+    "productPrice": 59400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE093",
+    "productName": "데일리지 롱 와이드 진(NAVY)",
+    "productPrice": 24400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE094",
+    "productName": "데일리지 롱 와이드 진(DARK GRAY)",
+    "productPrice": 44700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE095",
+    "productName": "데일리지 롱 와이드 진(INDIGO)",
+    "productPrice": 46500,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE096",
+    "productName": "데일리지 롱 와이드 진(WHITE)",
+    "productPrice": 50800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE097",
+    "productName": "데일리지 롱 와이드 진(LIGHT INDIGO)",
+    "productPrice": 49300,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE098",
+    "productName": "데일리지 롱 와이드 진(VINTAGE INDIGO)",
+    "productPrice": 31900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE099",
+    "productName": "데일리지 롱 와이드 진(ASH INDIGO)",
+    "productPrice": 50600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE100",
+    "productName": "데일리지 웜 와이드 진(NAVY)",
+    "productPrice": 40600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE101",
+    "productName": "데일리지 웜 와이드 진(IVORY)",
+    "productPrice": 49500,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "DE102",
+    "productName": "데일리지 웜 와이드 진(DARK GRAY)",
+    "productPrice": 35200,
+    "gender": "W",
+    "temp": "",
+    "cateId": "DE",
+    "colorId": ""
+  },
+  {
+    "productId": "OP000",
+    "productName": "고객감사 여성 COOL 원피스",
+    "productPrice": 39700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OP",
+    "colorId": ""
+  },
+  {
+    "productId": "OP001",
+    "productName": "빅카라 원피스",
+    "productPrice": 58400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OP",
+    "colorId": ""
+  },
+  {
+    "productId": "OP002",
+    "productName": "에어 비스코스 롱 원피스",
+    "productPrice": 30700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OP",
+    "colorId": ""
+  },
+  {
+    "productId": "OP003",
+    "productName": "(우디) 소프트코튼 카라 원피스",
+    "productPrice": 56800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OP",
+    "colorId": ""
+  },
+  {
+    "productId": "OP004",
+    "productName": "UV차단 피케 원피스",
+    "productPrice": 32500,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OP",
+    "colorId": ""
+  },
+  {
+    "productId": "OP005",
+    "productName": "린넨라이크 레이어드 원피스",
+    "productPrice": 46700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OP",
+    "colorId": ""
+  },
+  {
+    "productId": "OP006",
+    "productName": "셔츠형 원피스",
+    "productPrice": 44800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OP",
+    "colorId": ""
+  },
+  {
+    "productId": "OP007",
+    "productName": "COMFORT 롱원피스",
+    "productPrice": 65000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OP",
+    "colorId": ""
+  },
+  {
+    "productId": "OP008",
+    "productName": "레이어드 미니 원피스",
+    "productPrice": 63700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OP",
+    "colorId": ""
+  },
+  {
+    "productId": "OP009",
+    "productName": "화섬 민소매 원피스",
+    "productPrice": 47300,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OP",
+    "colorId": ""
+  },
+  {
+    "productId": "OP010",
+    "productName": "셔츠형 롱 원피스",
+    "productPrice": 32200,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OP",
+    "colorId": ""
+  },
+  {
+    "productId": "OP011",
+    "productName": "(QR) 스퀘어넥 원피스",
+    "productPrice": 50800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OP",
+    "colorId": ""
+  },
+  {
+    "productId": "OP012",
+    "productName": "(QR) 세일러 카라 원피스",
+    "productPrice": 42600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OP",
+    "colorId": ""
+  },
+  {
+    "productId": "OP013",
+    "productName": "(QR) 슬리브리스 나일론 원피스",
+    "productPrice": 53600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OP",
+    "colorId": ""
+  },
+  {
+    "productId": "OP014",
+    "productName": "데님 앞포켓 원피스",
+    "productPrice": 62400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OP",
+    "colorId": ""
+  },
+  {
+    "productId": "OP015",
+    "productName": "레이어드 롱 원피스",
+    "productPrice": 49000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OP",
+    "colorId": ""
+  },
+  {
+    "productId": "OU000",
+    "productName": "(QR) 라이트 후디드 자켓",
+    "productPrice": 43100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU001",
+    "productName": "베이직 롱패딩 (SPJPD4VC01 RE)",
+    "productPrice": 36000,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU002",
+    "productName": "(QR) 경량 베스트",
+    "productPrice": 50800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU003",
+    "productName": "베이직 패쪼 (SPJVD4TC01 RE)",
+    "productPrice": 41700,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU004",
+    "productName": "베이직 푸퍼 (SPJPD4TC11 RE)",
+    "productPrice": 49100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU005",
+    "productName": "베이직 패쪼",
+    "productPrice": 40100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU006",
+    "productName": "리버서블 푸퍼",
+    "productPrice": 43200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU007",
+    "productName": "베이직 푸퍼 (코듀로이)",
+    "productPrice": 47200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU008",
+    "productName": "베이직 푸퍼",
+    "productPrice": 50500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU009",
+    "productName": "라이트 자켓",
+    "productPrice": 41100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU010",
+    "productName": "베이직 롱패딩",
+    "productPrice": 51500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU011",
+    "productName": "크롭 패딩 베스트(SPJVD4TG01 RE)",
+    "productPrice": 58700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU012",
+    "productName": "파스텔 푸퍼 (코듀로이) (SPJPD4TG02 RE)",
+    "productPrice": 37700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU013",
+    "productName": "파스텔 푸퍼(SPJPD4TG01 RE)",
+    "productPrice": 52900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU014",
+    "productName": "(QR) 여성 라이트 베스트",
+    "productPrice": 49300,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU015",
+    "productName": "(QR) 여성 라이트 푸퍼",
+    "productPrice": 50200,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU016",
+    "productName": "파스텔 푸퍼",
+    "productPrice": 58000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU017",
+    "productName": "퍼후드 롱 패딩",
+    "productPrice": 31900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU018",
+    "productName": "퍼카라 벨티드 패딩",
+    "productPrice": 32400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU019",
+    "productName": "크롭 패딩 베스트",
+    "productPrice": 44500,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU020",
+    "productName": "퀼팅 경량 패딩",
+    "productPrice": 38900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU021",
+    "productName": "퍼 카라 크롭 푸퍼",
+    "productPrice": 53000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU022",
+    "productName": "리버서블 크롭 푸퍼",
+    "productPrice": 39000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU023",
+    "productName": "파스텔 푸퍼 (코듀로이)",
+    "productPrice": 47200,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU024",
+    "productName": "리사이클 베이직 퍼플리스 집업",
+    "productPrice": 37500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU025",
+    "productName": "(우디) 플리스 반집업",
+    "productPrice": 30500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU026",
+    "productName": "리사이클 베이직 퍼플리스 집업",
+    "productPrice": 30900,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU027",
+    "productName": "(담곰이)따듯하담곰 퍼플리스 집업(SPFZD4VU20 RE)(BLACK)",
+    "productPrice": 35400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU028",
+    "productName": "(담곰이)따듯하담곰 퍼플리스집업(SPFZD4VU20 RE)(WHITE)",
+    "productPrice": 35000,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU029",
+    "productName": "(담곰이) 따듯하담곰 퍼플리스 집업(BLACK)",
+    "productPrice": 31200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU030",
+    "productName": "베이직 플리스 집업",
+    "productPrice": 33500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU031",
+    "productName": "(우디) 덤블 베스트 (SPJVD4TG51 RE)",
+    "productPrice": 30100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU032",
+    "productName": "(담곰이) 따듯하담곰 퍼플리스 집업(WHITE)",
+    "productPrice": 39600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU033",
+    "productName": "크롭 덤블 후드집업",
+    "productPrice": 29900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU034",
+    "productName": "플리스 크롭 하프 집업",
+    "productPrice": 37600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU035",
+    "productName": "덤블 더플 코트",
+    "productPrice": 30000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU036",
+    "productName": "(QR) 울블렌드 하프코트",
+    "productPrice": 78800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU037",
+    "productName": "벨티드 트렌치코트",
+    "productPrice": 89300,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU038",
+    "productName": "울블렌드 싱글 코트 (SPJWD4VM01 RE)",
+    "productPrice": 76600,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU039",
+    "productName": "울블렌드 발마칸 코트 (SPJWD4VM02 RE)",
+    "productPrice": 78500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU040",
+    "productName": "울블렌드 헤링본 발마칸 코트",
+    "productPrice": 83400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU041",
+    "productName": "울블렌드 후드 코트",
+    "productPrice": 71000,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU042",
+    "productName": "울블렌드 발마칸 코트",
+    "productPrice": 90200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU043",
+    "productName": "울블렌드 싱글 코트",
+    "productPrice": 75400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU044",
+    "productName": "울블렌드 벨티드 코트",
+    "productPrice": 87200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU045",
+    "productName": "울블렌드 부클 하프 코트",
+    "productPrice": 90600,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU046",
+    "productName": "후드 더플코트",
+    "productPrice": 71200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU047",
+    "productName": "울블렌드 덤블카라 숏 코트",
+    "productPrice": 71500,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU048",
+    "productName": "핸드메이드 숏코트",
+    "productPrice": 70900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU049",
+    "productName": "울블렌드 벨티드 발마칸 코트 (SPJWD4VW01 RE)",
+    "productPrice": 91100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU050",
+    "productName": "후드 숏 더플 코트(SPJWD4TG01 RE)",
+    "productPrice": 82400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU051",
+    "productName": "(QR) 퀼팅하프코트",
+    "productPrice": 86700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU052",
+    "productName": "울 50% 핸드메이드 코트",
+    "productPrice": 86500,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU053",
+    "productName": "울블렌드 벨티드 발마칸 코트",
+    "productPrice": 87800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU054",
+    "productName": "울블렌드 오버핏 더블 롱 코트",
+    "productPrice": 76400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU055",
+    "productName": "울블렌드 덤블카라 숏 코트",
+    "productPrice": 88700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU056",
+    "productName": "후드 숏  더플 코트",
+    "productPrice": 81000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU057",
+    "productName": "맥 트렌치 코트",
+    "productPrice": 79200,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU058",
+    "productName": "(QR) 워크 재킷",
+    "productPrice": 51100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU059",
+    "productName": "COOL 스트레치 자켓",
+    "productPrice": 67300,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU060",
+    "productName": "COOL 스트레치 패커블 자켓",
+    "productPrice": 49400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU061",
+    "productName": "반팔 집업 점퍼",
+    "productPrice": 72100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU062",
+    "productName": "COOL 베이직 자켓",
+    "productPrice": 38900,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU063",
+    "productName": "우븐 바시티 자켓",
+    "productPrice": 50000,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU064",
+    "productName": "데님 트러커 (셋업)",
+    "productPrice": 83000,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU065",
+    "productName": "오버핏 블루종 자켓",
+    "productPrice": 72000,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU066",
+    "productName": "레더배색 바시티 자켓 (SPJJD4TC01 RE)",
+    "productPrice": 40400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU067",
+    "productName": "오버핏 MA-1 항공점퍼 (SPJAD4TC02 RE)",
+    "productPrice": 47200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU068",
+    "productName": "에센셜 레귤러핏 자켓",
+    "productPrice": 35400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU069",
+    "productName": "베이직 퀼팅 자켓",
+    "productPrice": 60400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU070",
+    "productName": "(ATLANTA) 트랙 자켓",
+    "productPrice": 63400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU071",
+    "productName": "(QR) 체크 패딩셔켓",
+    "productPrice": 48000,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU072",
+    "productName": "(QR) 울블렌드 셔켓",
+    "productPrice": 35900,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU073",
+    "productName": "(QR) 라이트 패디드 자켓",
+    "productPrice": 73600,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU074",
+    "productName": "헌팅 자켓",
+    "productPrice": 41400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU075",
+    "productName": "에센셜 오버핏 자켓",
+    "productPrice": 86800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU076",
+    "productName": "COOL 레귤러 반팔 자켓",
+    "productPrice": 58800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU077",
+    "productName": "COOL 크롭 반팔 자켓",
+    "productPrice": 59900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU078",
+    "productName": "COOL 베이직 자켓",
+    "productPrice": 48200,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU079",
+    "productName": "레더라이크 라운드넥 자켓",
+    "productPrice": 87700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU080",
+    "productName": "COOL 스트레치 포켓 점퍼",
+    "productPrice": 39800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU081",
+    "productName": "크롭 파이핑 바시티 자켓",
+    "productPrice": 55100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU082",
+    "productName": "(QR) 크롭 데님 레이서 자켓",
+    "productPrice": 89100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU083",
+    "productName": "후드 야상 점퍼",
+    "productPrice": 44300,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU084",
+    "productName": "(QR) 크롭 헌팅 자켓",
+    "productPrice": 77800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU085",
+    "productName": "트위드 크롭 반팔 자켓",
+    "productPrice": 65000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU086",
+    "productName": "크롭 데님 트러커(셋업)",
+    "productPrice": 64900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU087",
+    "productName": "레더라이크 미니멀 크롭 자켓",
+    "productPrice": 32600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU088",
+    "productName": "에센셜 크롭 자켓",
+    "productPrice": 71000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU089",
+    "productName": "울블렌드 라운드넥 자켓",
+    "productPrice": 45600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU090",
+    "productName": "코듀로이 점퍼",
+    "productPrice": 69300,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU091",
+    "productName": "경량 퀼팅 자켓",
+    "productPrice": 38900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU092",
+    "productName": "카라 탈착 경량 퀼팅 점퍼",
+    "productPrice": 67500,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU093",
+    "productName": "울블렌드 헤리티지 블레이저",
+    "productPrice": 46800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU094",
+    "productName": "오버사이즈 블레이저",
+    "productPrice": 65200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU095",
+    "productName": "베이직 오버핏 자켓",
+    "productPrice": 59800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU096",
+    "productName": "크롭 자켓",
+    "productPrice": 65800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU097",
+    "productName": "케이블 가디건",
+    "productPrice": 46500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU098",
+    "productName": "소프트얀 라운드넥 하찌 가디건",
+    "productPrice": 32000,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU099",
+    "productName": "소프트얀 하찌 V넥 가디건",
+    "productPrice": 42200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU100",
+    "productName": "소프트얀 카라넥 집업 가디건",
+    "productPrice": 47900,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU101",
+    "productName": "날개사 가디건",
+    "productPrice": 38200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU102",
+    "productName": "소프트얀 투웨이 집업 가디건",
+    "productPrice": 48300,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU103",
+    "productName": "(우디) 울블렌드 V넥 가디건",
+    "productPrice": 47000,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU104",
+    "productName": "(QR) 피그먼트 가디건",
+    "productPrice": 33300,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU105",
+    "productName": "(QR) 울블렌드 케이블 가디건",
+    "productPrice": 40500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU106",
+    "productName": "(QR) 케이블 니트 가디건",
+    "productPrice": 47500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU107",
+    "productName": "(QR) 하찌 V넥 가디건",
+    "productPrice": 45000,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU108",
+    "productName": "(HUNT) 오버핏 가디건",
+    "productPrice": 48100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU109",
+    "productName": "소프트얀 컬러레이어드 오버핏 가디건",
+    "productPrice": 32200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU110",
+    "productName": "MERINO 메리노울 V넥 가디건",
+    "productPrice": 37500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU111",
+    "productName": "(QR) 골지 트임 카디건",
+    "productPrice": 31500,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU112",
+    "productName": "COOL 썸머 케이블 가디건",
+    "productPrice": 41700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU113",
+    "productName": "COOL 핀 배색 가디건",
+    "productPrice": 42300,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU114",
+    "productName": "COOL 볼레로 가디건",
+    "productPrice": 42100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU115",
+    "productName": "COOL 조직 변형 가디건",
+    "productPrice": 32200,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU116",
+    "productName": "(우디) 케이블 크롭 가디건",
+    "productPrice": 40900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU117",
+    "productName": "소프트얀 리본 볼레로 가디건",
+    "productPrice": 45000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU118",
+    "productName": "트위드 가디건",
+    "productPrice": 43000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU119",
+    "productName": "아가일 가디건",
+    "productPrice": 45400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU120",
+    "productName": "빅카라 집업 가디건",
+    "productPrice": 44200,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU121",
+    "productName": "배색 집업 가디건",
+    "productPrice": 43600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU122",
+    "productName": "케이블 조끼 가디건",
+    "productPrice": 35100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU123",
+    "productName": "날개사 볼레로 가디건",
+    "productPrice": 31100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU124",
+    "productName": "소프트얀 라운드넥 케이블 가디건",
+    "productPrice": 34300,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU125",
+    "productName": "소프트얀 라운드넥 가디건",
+    "productPrice": 32100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU126",
+    "productName": "(우디) 케이블 크롭 가디건",
+    "productPrice": 34300,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU127",
+    "productName": "소프트얀 오픈카라 배색 가디건",
+    "productPrice": 39800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU128",
+    "productName": "(HUNT) 솜사탕 카라 케이블 가디건",
+    "productPrice": 40900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "OU",
+    "colorId": ""
+  },
+  {
+    "productId": "OU129",
+    "productName": "스트레치 남성 쿨 트리코트 후드집업",
+    "productPrice": 27000,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "OU130",
+    "productName": "데님 후드 집업",
+    "productPrice": 24100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "OU131",
+    "productName": "프렌치테리 2-WAY 루즈핏 후드집업",
+    "productPrice": 55300,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "OU132",
+    "productName": "프렌치테리 루즈핏 2-WAY 후드집업(기모)",
+    "productPrice": 20800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "OU133",
+    "productName": "스트레치 여성 쿨 트리코트 후드집업",
+    "productPrice": 25900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "OU134",
+    "productName": "(QR) 골지 크롭 후드 집업",
+    "productPrice": 32500,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "OU135",
+    "productName": "프렌치테리 2-WAY 루즈핏 후드집업(W)",
+    "productPrice": 40300,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "OU136",
+    "productName": "크롭 데님 후드 집업",
+    "productPrice": 21000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "OU137",
+    "productName": "골지 카라넥 집업",
+    "productPrice": 31200,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "OU138",
+    "productName": "소프트코튼 크롭 후드집업",
+    "productPrice": 35800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "OU139",
+    "productName": "코듀로이 크롭 후드 집업",
+    "productPrice": 38900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "OU140",
+    "productName": "프렌치테리 크롭 후드집업",
+    "productPrice": 44600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "OU141",
+    "productName": "크롭 2-WAY 후드집업 스웨터",
+    "productPrice": 41000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "OU142",
+    "productName": "크롭 카라넥 집업",
+    "productPrice": 36500,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "PA000",
+    "productName": "COOL 테이퍼드 슬랙스",
+    "productPrice": 31800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA001",
+    "productName": "COOL 스트레치 테이퍼드 슬랙스",
+    "productPrice": 38200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA002",
+    "productName": "린넨라이크 풀밴딩 와이드 슬랙스",
+    "productPrice": 44800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA003",
+    "productName": "COOL 스트레치 풀밴딩 테이퍼드 슬랙스",
+    "productPrice": 44700,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA004",
+    "productName": "에센셜 원턱 와이드 슬랙스",
+    "productPrice": 46300,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA005",
+    "productName": "에센셜 롱 테이퍼드 슬랙스",
+    "productPrice": 26300,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA006",
+    "productName": "에센셜 와이드 슬랙스",
+    "productPrice": 28200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA007",
+    "productName": "에센셜 크롭 테이퍼드 슬랙스 (-5CM)",
+    "productPrice": 47200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA008",
+    "productName": "에센셜 벨티드 와이드 슬랙스",
+    "productPrice": 33100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA009",
+    "productName": "에센셜 풀밴딩 테이퍼드 슬랙스",
+    "productPrice": 31100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA010",
+    "productName": "웜 풀밴딩 테이퍼드 슬랙스",
+    "productPrice": 34600,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA011",
+    "productName": "웜 히든밴딩 세미와이드 슬랙스",
+    "productPrice": 26800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA012",
+    "productName": "웜 히든밴딩 테이퍼드 슬랙스",
+    "productPrice": 31300,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA013",
+    "productName": "풀밴딩 테이퍼드",
+    "productPrice": 44400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA014",
+    "productName": "데일리지 롱 히든밴딩 테이퍼드",
+    "productPrice": 38000,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA015",
+    "productName": "데일리지 크롭 히든밴딩 테이퍼드 (-5CM)",
+    "productPrice": 37600,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA016",
+    "productName": "데일리지 롱 히든밴딩 세미와이드",
+    "productPrice": 37700,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA017",
+    "productName": "크롭 히든밴딩 세미와이드 슬랙스(-5CM)",
+    "productPrice": 35800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA018",
+    "productName": "COOL 크롭 와이드 슬랙스",
+    "productPrice": 31300,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA019",
+    "productName": "COOL 롱 와이드 슬랙스",
+    "productPrice": 29000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA020",
+    "productName": "데일리지 풀밴딩 스트레치 와이드",
+    "productPrice": 46600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA021",
+    "productName": "에센셜 롱 투턱 와이드 슬랙스",
+    "productPrice": 36800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA022",
+    "productName": "에센셜 스트레이트 슬랙스",
+    "productPrice": 43100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA023",
+    "productName": "에센셜 크롭 와이드 슬랙스 (-5CM)",
+    "productPrice": 32000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA024",
+    "productName": "에센셜 롱 와이드 슬랙스",
+    "productPrice": 35700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA025",
+    "productName": "데일리지 웜 풀밴딩 스트레치 와이드",
+    "productPrice": 34100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA026",
+    "productName": "데일리지 웜 부츠 컷 슬랙스",
+    "productPrice": 35300,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA027",
+    "productName": "데일리지 웜 뒷밴딩 슬림스트레이트 슬랙스",
+    "productPrice": 40600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA028",
+    "productName": "데일리지 웜 와이드 슬랙스",
+    "productPrice": 40600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA029",
+    "productName": "데일리지 히든밴딩 슬림스트레이트",
+    "productPrice": 33600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA030",
+    "productName": "데일리지 히든밴딩 테이퍼드",
+    "productPrice": 49400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA031",
+    "productName": "화섬 벨티드 와이드 슬랙스",
+    "productPrice": 30900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA032",
+    "productName": "데일리지 웜 풀밴딩 스트레치 부츠컷",
+    "productPrice": 49800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA033",
+    "productName": "데일리지 풀밴딩 스트레치 부츠컷",
+    "productPrice": 43100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA034",
+    "productName": "데일리지 풀밴딩 스트레치 와이드",
+    "productPrice": 46900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA035",
+    "productName": "데일리지 부츠 컷 슬랙스",
+    "productPrice": 42400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA036",
+    "productName": "(QR) 소로나 레귤러핏 조거팬츠",
+    "productPrice": 31700,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA037",
+    "productName": "COOL 원턱 버뮤다 하프팬츠",
+    "productPrice": 20300,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA038",
+    "productName": "프렌치테리 루즈핏 하프팬츠",
+    "productPrice": 38400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA039",
+    "productName": "프렌치테리 카고 와이드 스웨트팬츠",
+    "productPrice": 28100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA040",
+    "productName": "(QR) 와이드 벌룬핏 스웨트팬츠",
+    "productPrice": 29200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA041",
+    "productName": "프렌치테리 원턱 와이드 스웨트팬츠",
+    "productPrice": 37100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA042",
+    "productName": "프렌치테리 세미와이드 스웨트팬츠",
+    "productPrice": 23900,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA043",
+    "productName": "(ATLANTA) 트랙 스웨트팬츠",
+    "productPrice": 34500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA044",
+    "productName": "프렌치테리 베이직 조거팬츠",
+    "productPrice": 29400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA045",
+    "productName": "프렌치테리 카고 와이드팬츠(기모)",
+    "productPrice": 22100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA046",
+    "productName": "프렌치테리 루즈핏 스웨트팬츠",
+    "productPrice": 34200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA047",
+    "productName": "(ATLANTA) 셋업 조거팬츠 (기모)",
+    "productPrice": 21800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA048",
+    "productName": "공용 프렌치테리 베이직 조거팬츠",
+    "productPrice": 29900,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA049",
+    "productName": "골지 와이드 팬츠",
+    "productPrice": 32200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA050",
+    "productName": "베이직 조거팬츠",
+    "productPrice": 36600,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA051",
+    "productName": "(QR) (NEWYORK) 와이드 트랙 셋업팬츠",
+    "productPrice": 25800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA052",
+    "productName": "(HUNT) 셋업 조거 팬츠",
+    "productPrice": 32100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA053",
+    "productName": "공용 프렌치테리 루즈핏 스웨트팬츠",
+    "productPrice": 22400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA054",
+    "productName": "(QR) 롱 부츠컷 스웨트팬츠",
+    "productPrice": 20300,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA055",
+    "productName": "(QR) 소로나 슬림핏 조거팬츠",
+    "productPrice": 31100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA056",
+    "productName": "에어 비스코스 롱 와이드 팬츠",
+    "productPrice": 21000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA057",
+    "productName": "골지 부츠컷 팬츠",
+    "productPrice": 38600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA058",
+    "productName": "소프트코튼 베이직 조거팬츠",
+    "productPrice": 30900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA059",
+    "productName": "소프트코튼 세미와이드 스웨트팬츠",
+    "productPrice": 24300,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA060",
+    "productName": "프렌치테리 세미 와이드팬츠",
+    "productPrice": 26000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA061",
+    "productName": "프렌치테리 세미와이드 스웨트팬츠",
+    "productPrice": 26100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA062",
+    "productName": "벨루어 와이드팬츠",
+    "productPrice": 35100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA063",
+    "productName": "2-WAY 플리스 세미와이드 팬츠",
+    "productPrice": 35700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA064",
+    "productName": "여성 프렌치테리 세미와이드 스웨트팬츠",
+    "productPrice": 34100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA065",
+    "productName": "여성 세미부츠컷 팬츠 (기모)",
+    "productPrice": 32400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA066",
+    "productName": "COMFORT 롱와이드 팬츠",
+    "productPrice": 30900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA067",
+    "productName": "에어비스코스 골지 와이드팬츠",
+    "productPrice": 39700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA068",
+    "productName": "고객감사 남성 COOL 와이드 팬츠",
+    "productPrice": 29500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA069",
+    "productName": "스트레치 남성 쿨 트리코트 조거팬츠",
+    "productPrice": 31200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA070",
+    "productName": "COOL 스트레치 와이드 팬츠",
+    "productPrice": 27300,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA071",
+    "productName": "COOL 스트레치 조거 팬츠",
+    "productPrice": 30200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA072",
+    "productName": "데일리지 라이트코튼 밴딩 팬츠",
+    "productPrice": 30100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA073",
+    "productName": "데일리지 이지밴딩 원턱 팬츠",
+    "productPrice": 29900,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA074",
+    "productName": "라이트 밴딩 쇼츠 (나일론)",
+    "productPrice": 36300,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA075",
+    "productName": "코듀로이 와이드 카고 팬츠",
+    "productPrice": 29800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA076",
+    "productName": "COOL 카고 하프팬츠",
+    "productPrice": 36400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA077",
+    "productName": "트랙 파라슈트 와이드 팬츠 (나일론)",
+    "productPrice": 32800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA078",
+    "productName": "라이트 와이드 카고 팬츠 (나일론)",
+    "productPrice": 48400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA079",
+    "productName": "이지 밴딩 치노 팬츠",
+    "productPrice": 35800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA080",
+    "productName": "카펜터 와이드 팬츠",
+    "productPrice": 31900,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA081",
+    "productName": "웜 2-WAY 카고 와이드 팬츠",
+    "productPrice": 26600,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA082",
+    "productName": "(셋업) 우븐 조거 팬츠",
+    "productPrice": 38800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA083",
+    "productName": "파라슈트 와이드 팬츠",
+    "productPrice": 43900,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA084",
+    "productName": "와이드 카고 팬츠",
+    "productPrice": 42600,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA085",
+    "productName": "투턱 와이드 치노 팬츠",
+    "productPrice": 28800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA086",
+    "productName": "고객감사 여성 COOL 와이드 팬츠",
+    "productPrice": 37900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA087",
+    "productName": "스트레치 여성 쿨 트리코트 조거팬츠",
+    "productPrice": 25400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA088",
+    "productName": "(QR) 골지 롱 와이드 팬츠",
+    "productPrice": 28400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA089",
+    "productName": "COOL 스트레치 와이드 밴딩 팬츠",
+    "productPrice": 41700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA090",
+    "productName": "여성 라이트 쇼츠 (나일론)",
+    "productPrice": 37100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA091",
+    "productName": "데일리지 풀밴딩 스트레치 부츠컷",
+    "productPrice": 47100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA092",
+    "productName": "COOL 2-WAY 스트레치 파라슈트 팬츠",
+    "productPrice": 30900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA093",
+    "productName": "2-WAY 코튼 카고 와이드 팬츠",
+    "productPrice": 33600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA094",
+    "productName": "핀턱 코튼 스판 와이드 팬츠",
+    "productPrice": 26200,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA095",
+    "productName": "피그먼트 와이드 팬츠",
+    "productPrice": 25400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA096",
+    "productName": "밴딩 와이드 팬츠",
+    "productPrice": 37800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA097",
+    "productName": "라이트 2-WAY 카고 와이드 팬츠 (나일론)",
+    "productPrice": 42100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA098",
+    "productName": "코듀로이 와이드 팬츠 (SPTCD4TG01 RE)",
+    "productPrice": 47100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA099",
+    "productName": "세미부츠컷 팬츠 (기모)",
+    "productPrice": 47700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA100",
+    "productName": "2-WAY 웜 카고 와이드 팬츠",
+    "productPrice": 29700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA101",
+    "productName": "웜테크 에브리웨어 소프트 조거 팬츠",
+    "productPrice": 36300,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA102",
+    "productName": "웜테크 에브리웨어 소프트 스트레이트 팬츠",
+    "productPrice": 33800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA103",
+    "productName": "스트레치 파라슈트 팬츠",
+    "productPrice": 30300,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA104",
+    "productName": "데일리지 라이트코튼 밴딩 쇼츠",
+    "productPrice": 53200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA105",
+    "productName": "고객감사 남성 COOL 쇼츠",
+    "productPrice": 20500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA106",
+    "productName": "스트레치 남성 쿨 트리코트 쇼츠",
+    "productPrice": 38400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA107",
+    "productName": "데일리지 라이트코튼 카고 쇼츠",
+    "productPrice": 24100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA108",
+    "productName": "COOL 스트레치 밴딩 쇼츠",
+    "productPrice": 32400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA109",
+    "productName": "(ATLANTA) 셋업 하프팬츠",
+    "productPrice": 45200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA110",
+    "productName": "THE SUNDAY CLUB 하프팬츠",
+    "productPrice": 22300,
+    "gender": "M",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA111",
+    "productName": "스트레치 여성 쿨 트리코트 쇼츠",
+    "productPrice": 35100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA112",
+    "productName": "COOL 뒷 밴딩 반바지",
+    "productPrice": 27600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA113",
+    "productName": "코튼 스판 버뮤다 팬츠",
+    "productPrice": 44500,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA114",
+    "productName": "바인딩 팬츠",
+    "productPrice": 41900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA115",
+    "productName": "PEACH STATE 하프팬츠",
+    "productPrice": 57200,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA116",
+    "productName": "소프트코튼 베이직 하프팬츠",
+    "productPrice": 55700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA117",
+    "productName": "Sunday Club 하프 팬츠",
+    "productPrice": 44100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "PA118",
+    "productName": "코듀로이 버뮤다 팬츠",
+    "productPrice": 32700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "PA",
+    "colorId": ""
+  },
+  {
+    "productId": "SK000",
+    "productName": "플리츠 미니 스커트",
+    "productPrice": 44000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK001",
+    "productName": "A라인 롱 스커트",
+    "productPrice": 31900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK002",
+    "productName": "(QR) 플리츠 롱 스커트",
+    "productPrice": 56400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK003",
+    "productName": "라이트 카고 미니 스커트 (나일론)",
+    "productPrice": 58000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK004",
+    "productName": "코튼 카고 맥시 롱 스커트",
+    "productPrice": 37400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK005",
+    "productName": "라이트 글로시 카고 롱 스커트(나일론)",
+    "productPrice": 35800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK006",
+    "productName": "코튼 롱 스커트",
+    "productPrice": 42700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK007",
+    "productName": "코튼 롱 플레어 스커트",
+    "productPrice": 44700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK008",
+    "productName": "카고 코튼 미니 스커트",
+    "productPrice": 30800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK009",
+    "productName": "맞주름 미니 스커트",
+    "productPrice": 58500,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK010",
+    "productName": "코튼 미니 스커트",
+    "productPrice": 52900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK011",
+    "productName": "플리츠 스커트",
+    "productPrice": 28400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK012",
+    "productName": "맞턱 미디 스커트",
+    "productPrice": 35100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK013",
+    "productName": "트위드 스커트",
+    "productPrice": 42000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK014",
+    "productName": "포켓 니트 스커트",
+    "productPrice": 24900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK015",
+    "productName": "카고 스커트",
+    "productPrice": 56500,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK016",
+    "productName": "데님 롱 스커트 (셋업)(BLACK)",
+    "productPrice": 51700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK017",
+    "productName": "라이트 카고 롱 스커트 (나일론)",
+    "productPrice": 20600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK018",
+    "productName": "데님 롱 스커트 (셋업)(VINTAGE INDIGO)",
+    "productPrice": 36900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK019",
+    "productName": "데님 롱 스커트 (셋업)(WHITE)",
+    "productPrice": 20100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK020",
+    "productName": "카고 데님 롱 스커트",
+    "productPrice": 52100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK021",
+    "productName": "데님 미니 스커트(VINTAGE INDIGO)",
+    "productPrice": 32300,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK022",
+    "productName": "카고 데님 스커트(DARK GRAY)",
+    "productPrice": 39000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK023",
+    "productName": "카고 데님 스커트(VINTAGE INDIGO)",
+    "productPrice": 56600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK024",
+    "productName": "데님 미니 스커트(LIGHT INDIGO)",
+    "productPrice": 20200,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK025",
+    "productName": "데님 미니 스커트(DARK GRAY)",
+    "productPrice": 26300,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK026",
+    "productName": "데님 롱 스커트 (셋업)(LIGHT INDIGO)",
+    "productPrice": 40600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK027",
+    "productName": "데님 롱 스커트 (셋업)(NAVY)",
+    "productPrice": 46200,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK028",
+    "productName": "데님 미니 스커트(NAVY)",
+    "productPrice": 37800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK029",
+    "productName": "(QR) 데님 카고 미니 스커트",
+    "productPrice": 51600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK030",
+    "productName": "데님 미니 스커트(셋업)",
+    "productPrice": 34700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "SK031",
+    "productName": "데님 롱 스커트 (셋업)",
+    "productPrice": 21300,
+    "gender": "W",
+    "temp": "",
+    "cateId": "SK",
+    "colorId": ""
+  },
+  {
+    "productId": "TO000",
+    "productName": "(ATLANTA) 넘버링 스웨트셔츠",
+    "productPrice": 37900,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO001",
+    "productName": "피그먼트 스웨트셔츠",
+    "productPrice": 48400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO002",
+    "productName": "(QR) 위시 우린 모두 별이야 스웻셔츠(BLACK)",
+    "productPrice": 29600,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO003",
+    "productName": "(QR) 위시 우린 모두 별이야 스웻셔츠(GRAY)",
+    "productPrice": 29300,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO004",
+    "productName": "(ATLANTA) 피그먼트 스웨트셔츠",
+    "productPrice": 47800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO005",
+    "productName": "프렌치테리 루즈핏 하프집업 스웨트셔츠",
+    "productPrice": 45800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO006",
+    "productName": "프렌치테리 베이직 스웨트셔츠",
+    "productPrice": 18700,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO007",
+    "productName": "(ATLANTA) P E SOCIETY 스웨트셔츠",
+    "productPrice": 36000,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO008",
+    "productName": "(우디) 헤리티지 스웨트셔츠",
+    "productPrice": 15800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO009",
+    "productName": "(우디) 자수 카라넥 반집업",
+    "productPrice": 28100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO010",
+    "productName": "(우디) 럭비 스웨트셔츠",
+    "productPrice": 46800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO011",
+    "productName": "(ATLANTA) 트랙 스웨트셔츠",
+    "productPrice": 43500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO012",
+    "productName": "(HUNT) HTNC 스웨트셔츠 (기모) (SPMWD4TC12 RE)",
+    "productPrice": 26500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO013",
+    "productName": "(NIELMOYED) 스웻셔츠(GRAY)",
+    "productPrice": 32100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO014",
+    "productName": "(NIELMOYED) 스웻셔츠(NAVY)",
+    "productPrice": 20200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO015",
+    "productName": "(ATLANTA) U.R.C 스웨트셔츠 (기모)",
+    "productPrice": 23800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO016",
+    "productName": "(데못죽) 입으면 데뷔조 갈 수 있는 스웻셔츠(MIX)",
+    "productPrice": 20200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO017",
+    "productName": "(기묘한이야기) 기묘한 이야기 스웨트셔츠(BLACK)",
+    "productPrice": 22900,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO018",
+    "productName": "(QR) GEORGIA 넘버링 크롭 스웨트셔츠",
+    "productPrice": 44400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO019",
+    "productName": "PEACH STATE 반팔 스웨트셔츠",
+    "productPrice": 21000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO020",
+    "productName": "소프트코튼 크롭 하프집업 스웨트셔츠",
+    "productPrice": 36200,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO021",
+    "productName": "래빗 피그먼트 크롭 스웨트셔츠",
+    "productPrice": 36700,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO022",
+    "productName": "(ATLANTA) 나일론 스트링 스웨트셔츠",
+    "productPrice": 15000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO023",
+    "productName": "(ATLANTA) 스웨트셔츠",
+    "productPrice": 44300,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO024",
+    "productName": "젤리베어 크롭 스웨트셔츠 (기모)",
+    "productPrice": 26100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO025",
+    "productName": "젤리베어 스웨트셔츠 (기모)",
+    "productPrice": 44200,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO026",
+    "productName": "크롭 자수 스웨트셔츠",
+    "productPrice": 23300,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO027",
+    "productName": "(ATLANTA) 배색 후드풀오버",
+    "productPrice": 47200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO028",
+    "productName": "(우디) 프렌즈 후드풀오버 (기모)",
+    "productPrice": 28800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO029",
+    "productName": "(NEWYORK) 빈티지 후드풀오버 (기모)",
+    "productPrice": 21500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO030",
+    "productName": "(우디) GEORGIA 후드풀오버",
+    "productPrice": 51300,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO031",
+    "productName": "(ATLANTA) 피그먼트 후드풀오버",
+    "productPrice": 51300,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO032",
+    "productName": "THE SUNDAY CLUB 반집업",
+    "productPrice": 28500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO033",
+    "productName": "(스위트홈) 스위트홈 후드스웻셔츠(PRINT)",
+    "productPrice": 44600,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO034",
+    "productName": "(스위트홈) 스위트홈 후드스웻셔츠(BLACK)",
+    "productPrice": 24500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO035",
+    "productName": "(우디) 헤리티지 후드풀오버",
+    "productPrice": 46700,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO036",
+    "productName": "(ATLANTA) GEORGIA 후드풀오버",
+    "productPrice": 23800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO037",
+    "productName": "(QR) 짱구 훈이는 강하다 후드 스웻셔츠(BLACK)",
+    "productPrice": 37000,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO038",
+    "productName": "(ATLANTA) 후드풀오버 (기모)",
+    "productPrice": 38200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO039",
+    "productName": "(기묘한이야기) 기묘한 이야기 후드스웻셔츠",
+    "productPrice": 59700,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO040",
+    "productName": "(QR) GEORGIA STATE 래글런 배색 크롭 후드풀오버",
+    "productPrice": 21300,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO041",
+    "productName": "(ATLANTA) 피그먼트 후드풀오버(W)",
+    "productPrice": 23500,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO042",
+    "productName": "(QR) GEORGIA 플라워 후드풀오버",
+    "productPrice": 46000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO043",
+    "productName": "래빗 피그먼트 크롭 후드풀오버",
+    "productPrice": 30400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO044",
+    "productName": "스윗베어 후드풀오버",
+    "productPrice": 43800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO045",
+    "productName": "COOL 오픈카라 스트라이프 반팔니트",
+    "productPrice": 20500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO046",
+    "productName": "COOL 반집업 반팔니트",
+    "productPrice": 25200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO047",
+    "productName": "COOL 밀라노 반팔니트",
+    "productPrice": 40000,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO048",
+    "productName": "COOL 라운드넥 케이블 반팔니트",
+    "productPrice": 44800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO049",
+    "productName": "COOL 오픈카라 반팔니트",
+    "productPrice": 37100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO050",
+    "productName": "COOL 카라넥 케이블 반팔니트",
+    "productPrice": 39100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO051",
+    "productName": "COOL 헨리넥 반팔니트",
+    "productPrice": 42400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO052",
+    "productName": "COOL 카라넥 반팔니트",
+    "productPrice": 41800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO053",
+    "productName": "케이블 풀오버",
+    "productPrice": 21200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO054",
+    "productName": "COOL 폴로카라 스웨터",
+    "productPrice": 35700,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO055",
+    "productName": "COOL 라운드넥 스웨터",
+    "productPrice": 25500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO056",
+    "productName": "날개사 스웨터",
+    "productPrice": 35200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO057",
+    "productName": "밀라노 조직 라운드넥 스웨터",
+    "productPrice": 43300,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO058",
+    "productName": "(QR) 헤어리 아가일 풀오버",
+    "productPrice": 33400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO059",
+    "productName": "소프트얀 라운드넥 풀오버",
+    "productPrice": 38100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO060",
+    "productName": "소프트얀 반집업 풀오버",
+    "productPrice": 22100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO061",
+    "productName": "소프트얀 카라넥 배색 스웨터",
+    "productPrice": 40600,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO062",
+    "productName": "소프트얀 라운드넥 스웨터",
+    "productPrice": 23100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO063",
+    "productName": "부클 오픈카라 반팔니트",
+    "productPrice": 25500,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO064",
+    "productName": "(QR) 디스트로이드 부클 니트",
+    "productPrice": 21600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO065",
+    "productName": "(QR) 오프숄더 리본 니트",
+    "productPrice": 24300,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO066",
+    "productName": "(QR) 루즈핏 브이넥 니트",
+    "productPrice": 33300,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO067",
+    "productName": "COOL 스퀘어넥 골지 반팔니트",
+    "productPrice": 49200,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO068",
+    "productName": "COOL 반오픈 반팔니트",
+    "productPrice": 41400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO069",
+    "productName": "COOL 라운드넥 반팔니트",
+    "productPrice": 33800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO070",
+    "productName": "퍼프소매 반팔니트",
+    "productPrice": 23300,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO071",
+    "productName": "COOL 카라넥 반팔니트",
+    "productPrice": 36800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO072",
+    "productName": "스퀘어넥 골지 니트",
+    "productPrice": 31900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO073",
+    "productName": "COOL 썸머 케이블 반팔니트",
+    "productPrice": 30800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO074",
+    "productName": "트위드 반팔니트",
+    "productPrice": 48800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO075",
+    "productName": "소프트얀 트임 긴팔 니트",
+    "productPrice": 25200,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO076",
+    "productName": "울블렌드 V넥 카라 케이블니트",
+    "productPrice": 44000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO077",
+    "productName": "아가일 베스트",
+    "productPrice": 37100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO078",
+    "productName": "날개사 스웨터",
+    "productPrice": 42000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO079",
+    "productName": "소프트얀 스트라이프 반오픈 니트",
+    "productPrice": 20100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO080",
+    "productName": "아란 케이블 V넥 스웨터",
+    "productPrice": 33200,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO081",
+    "productName": "린넨 긴팔셔츠",
+    "productPrice": 31000,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO082",
+    "productName": "링클프리 릴렉스핏 반팔 옥스포드 셔츠",
+    "productPrice": 32700,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO083",
+    "productName": "크링클 반팔셔츠",
+    "productPrice": 44300,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO084",
+    "productName": "링클프리 반팔셔츠",
+    "productPrice": 43900,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO085",
+    "productName": "체크 긴팔 셔츠",
+    "productPrice": 39500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO086",
+    "productName": "카라넥 풀오버 반팔셔츠",
+    "productPrice": 30000,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO087",
+    "productName": "아우터형 셔켓",
+    "productPrice": 44300,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO088",
+    "productName": "COOL 긴팔셔츠",
+    "productPrice": 33000,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO089",
+    "productName": "오버핏 반팔 옥스포드 셔츠",
+    "productPrice": 35900,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO090",
+    "productName": "(우디) 오버핏 반팔 옥스포드 셔츠",
+    "productPrice": 34500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO091",
+    "productName": "체크셔츠",
+    "productPrice": 35900,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO092",
+    "productName": "고밀도코튼 반팔셔츠",
+    "productPrice": 32400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO093",
+    "productName": "오버핏 데님 셔츠 (셋업)",
+    "productPrice": 47900,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO094",
+    "productName": "링클프리 레귤러핏 실키 셔츠",
+    "productPrice": 35700,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO095",
+    "productName": "플란넬 체크 셔츠",
+    "productPrice": 49600,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO096",
+    "productName": "오버핏 코듀로이 셔츠 (SPYWD4TC01 RE)",
+    "productPrice": 43500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO097",
+    "productName": "오버핏 옥스포드 셔츠",
+    "productPrice": 48100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO098",
+    "productName": "(우디) 오버핏 옥스포드 셔츠",
+    "productPrice": 31500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO099",
+    "productName": "시스루 오버핏 긴팔셔츠",
+    "productPrice": 43600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO100",
+    "productName": "화섬 크롭 반팔셔츠",
+    "productPrice": 48400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO101",
+    "productName": "리본 스트링 블라우스",
+    "productPrice": 39500,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO102",
+    "productName": "베이직 민소매 블라우스",
+    "productPrice": 45400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO103",
+    "productName": "크롭 스퀘어넥 블라우스",
+    "productPrice": 30900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO104",
+    "productName": "시어서커 크롭 반팔셔츠",
+    "productPrice": 35100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO105",
+    "productName": "핀턱 크롭 반팔셔츠",
+    "productPrice": 32800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO106",
+    "productName": "링클프리 오픈카라 반팔셔츠",
+    "productPrice": 43800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO107",
+    "productName": "린넨라이크 오픈카라 반팔셔츠",
+    "productPrice": 47600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO108",
+    "productName": "린넨라이크 긴팔셔츠",
+    "productPrice": 37100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO109",
+    "productName": "빅카라 블라우스",
+    "productPrice": 37100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO110",
+    "productName": "고밀도코튼 크롭 반팔셔츠",
+    "productPrice": 38300,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO111",
+    "productName": "크롭 데님 셔츠",
+    "productPrice": 48900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO112",
+    "productName": "라이트 체크 셔츠",
+    "productPrice": 49800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO113",
+    "productName": "후로킹 체크 셔츠",
+    "productPrice": 34000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO114",
+    "productName": "잔체크 셔츠",
+    "productPrice": 46400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO115",
+    "productName": "고밀도코튼 오버핏 반팔셔츠",
+    "productPrice": 42100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO116",
+    "productName": "(QR) 소로나 레귤러핏 긴팔티",
+    "productPrice": 31700,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO117",
+    "productName": "내추럴코튼 스트라이프 긴팔티",
+    "productPrice": 52800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO118",
+    "productName": "(ATLANTA) 피그먼트 긴팔티",
+    "productPrice": 51200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO119",
+    "productName": "밀라노조직 라운드넥 긴팔티",
+    "productPrice": 43300,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO120",
+    "productName": "(ATLANTA) 트랙 긴팔티",
+    "productPrice": 34600,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO121",
+    "productName": "(DARK MOON) 럭비 긴팔티셔츠(MIX)",
+    "productPrice": 53900,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO122",
+    "productName": "(DARK MOON) 럭비 긴팔티셔츠(NAVY)",
+    "productPrice": 19900,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO123",
+    "productName": "내추럴코튼 스트라이프 R넥 긴팔 티셔츠",
+    "productPrice": 44600,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO124",
+    "productName": "소프트비스코스 베이직 모크넥 니트티",
+    "productPrice": 37400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO125",
+    "productName": "내추럴코튼 레이어드용 롱기장 긴팔티",
+    "productPrice": 49500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO126",
+    "productName": "밀라노 조직 긴팔티",
+    "productPrice": 54200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO127",
+    "productName": "밀라노 조직 모크넥 긴팔티",
+    "productPrice": 29900,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO128",
+    "productName": "(QR) (NEWYORK) 피그먼트 긴팔티",
+    "productPrice": 25500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO129",
+    "productName": "(QR) 모터사이클 져지 긴팔티",
+    "productPrice": 43200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO130",
+    "productName": "(QR) 밀라노 조직 긴팔 티셔츠",
+    "productPrice": 25300,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO131",
+    "productName": "(NEWYORK) 트랙 긴팔티",
+    "productPrice": 37000,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO132",
+    "productName": "밀라노 조직 슬릿넥 긴팔티",
+    "productPrice": 53300,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO133",
+    "productName": "(QR) 언발 크롭 긴팔티",
+    "productPrice": 25400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO134",
+    "productName": "(QR) 브이넥 크롭 긴팔티",
+    "productPrice": 34500,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO135",
+    "productName": "(QR) 소로나 롱기장 긴팔티",
+    "productPrice": 41600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO136",
+    "productName": "(QR)배색 스티치 티셔츠",
+    "productPrice": 50400,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO137",
+    "productName": "(QR) 스퀘어넥 코튼스판 티셔츠",
+    "productPrice": 42500,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO138",
+    "productName": "(ATLANTA) 트랙 긴팔티(W)",
+    "productPrice": 49800,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO139",
+    "productName": "홀터넥 레이어드 긴팔 티셔츠",
+    "productPrice": 42200,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO140",
+    "productName": "머플러 티셔츠 세트",
+    "productPrice": 43100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO141",
+    "productName": "컷아웃 긴팔 티셔츠",
+    "productPrice": 36000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO142",
+    "productName": "소프트비스코스 세미 크롭 긴팔티",
+    "productPrice": 54100,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO143",
+    "productName": "(QR) 모크넥 스판 긴팔티셔츠",
+    "productPrice": 40600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO144",
+    "productName": "(QR) 레이어드 배색 긴팔 티셔츠",
+    "productPrice": 41900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO145",
+    "productName": "루즈핏 긴팔티셔츠",
+    "productPrice": 33500,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO146",
+    "productName": "(ATLANTA) 크롭 긴팔티",
+    "productPrice": 33900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO147",
+    "productName": "COMFORT 긴팔티셔츠",
+    "productPrice": 36200,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO148",
+    "productName": "고객감사 남성 COOL 반팔티",
+    "productPrice": 33500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO149",
+    "productName": "스트레치 남성 쿨 트리코트 티셔츠",
+    "productPrice": 26600,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO150",
+    "productName": "소로나 폴로카라 티셔츠",
+    "productPrice": 23800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO151",
+    "productName": "(QR) 유니버셜스튜디오 쿵푸파이팅 반팔티(BLACK)",
+    "productPrice": 22000,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO152",
+    "productName": "(QR) 유니버셜스튜디오 쿵푸파이팅 반팔티(MIX)",
+    "productPrice": 25700,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO153",
+    "productName": "COOL 오픈카라 반팔티셔츠",
+    "productPrice": 30200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO154",
+    "productName": "유니 스트라이프 반팔 티셔츠",
+    "productPrice": 33700,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO155",
+    "productName": "산리오캐릭터즈 반팔 티셔츠(MIX)",
+    "productPrice": 29800,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO156",
+    "productName": "산리오캐릭터즈 반팔 티셔츠(RED)",
+    "productPrice": 31700,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO157",
+    "productName": "산리오캐릭터즈 반팔 티셔츠(PINK)",
+    "productPrice": 24400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO158",
+    "productName": "산리오캐릭터즈 반팔 티셔츠(WHITE)",
+    "productPrice": 29500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO159",
+    "productName": "산리오캐릭터즈 반팔 티셔츠(BLACK)",
+    "productPrice": 20100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO160",
+    "productName": "소로나 반팔 티셔츠",
+    "productPrice": 27400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO161",
+    "productName": "빤쮸토끼 빤쮸토끼 반팔티(BLACK)",
+    "productPrice": 23200,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO162",
+    "productName": "빤쮸토끼 빤쮸토끼 반팔티(GRAPHIC WHITE)",
+    "productPrice": 21300,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO163",
+    "productName": "빤쮸토끼 빤쮸토끼 반팔티(WHITE)",
+    "productPrice": 30500,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO164",
+    "productName": "수피마코튼 레귤러핏 반팔티셔츠",
+    "productPrice": 17100,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO165",
+    "productName": "(우디) 프렌즈 반팔티",
+    "productPrice": 16400,
+    "gender": "M",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO166",
+    "productName": "(QR) (리본) GEORGIA 크롭 반팔티",
+    "productPrice": 16900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO167",
+    "productName": "스트레치 여성 쿨 트리코트 티셔츠",
+    "productPrice": 24000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO168",
+    "productName": "소로나 롱기장 반팔 티셔츠",
+    "productPrice": 30300,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO169",
+    "productName": "(ATHLETIC) 크롭 카라 반팔티",
+    "productPrice": 25500,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO170",
+    "productName": "수피마코튼 반팔티셔츠",
+    "productPrice": 19500,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO171",
+    "productName": "에어 비스코스 레귤러핏 반팔 티셔츠",
+    "productPrice": 35600,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO172",
+    "productName": "(우디) 그래픽 크롭 반팔티",
+    "productPrice": 20000,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  },
+  {
+    "productId": "TO173",
+    "productName": "담곰이 담곰이 한국상륙 반팔 티셔츠(GRAPHIC BLACK)",
+    "productPrice": 15900,
+    "gender": "W",
+    "temp": "",
+    "cateId": "TO",
+    "colorId": ""
+  }
+]
