@@ -44,7 +44,7 @@ public class ProductController {
             Model model)
     throws  ClassNotFoundException, SQLException{
 
-        USERS user = userService.getUserById(userId);
+        //USERS user = userService.getUserById(userId);
 
         List<ProductDTO> productDTOList = new ArrayList<>();
 
