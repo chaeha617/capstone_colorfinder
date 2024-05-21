@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorFinder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                },
+            },
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .tab-active {
+            border-bottom: 2px solid black;
+            color: black;
+        }
+
+        .tab:hover {
+            color: black;
+        }
+
+        .header-link:hover {
+            text-decoration: underline;
+        }
+
+        .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .text-wrapper {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .image-wrapper {
+            flex: 1;
+            margin-right: 20px;
+            height: 300px;
+        }
+
+        .border-dashed {
+            border-radius: 8px;
+            border: 2px dashed #e2e8f0;
+            padding: 20px;
+            margin-bottom: 20px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .keyword-highlight {
+            color: #0047ab;
+        }
+
+        .description-text {
+            font-size: 19px;
+        }
+
+        .description-text2 {
+            font-size: 22px;
+        }
+
+        .text-highlight {
+            background-color: rgba(0, 187, 255, 0.3);
+            padding: 0 0.2em;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800 ">
+
+<div class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-gray-100 py-4">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-2xl font-bold">ColorFinder</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="font-semibold">로그인</a></li>
+                    <li><a href="#" class="font-semibold">회원가입</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-6 py-8">
+        <!-- Tabs -->
+        <div class="flex space-x-4 mb-6">
+            <a href="#" class="tab font-semibold">쇼핑몰</a>
+            <a href="#" class="tab tab-active font-semibold">퍼스널컬러 진단</a>
+            <a href="#" class="tab font-semibold">커뮤니티</a>
+            <a href="#" class="tab font-semibold">마이페이지</a>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="text-wrapper">
+                <h2 class="text-xl font-semibold text-gray-700 mb-4">
+                    <span class="text-highlight description-text2">퍼스널 컬러(Personal Color)란?</span>
+                </h2>
+                <p class="text-gray-600 mb-4">퍼스널 컬러(Personal Color)는 두 가지의 의미를 지닌다.</p>
+                <p class="text-gray-600 mb-4"><strong>첫 번째,</strong> 개인이 타고날 때부터 가지고 있는 신체 색을 의미한다. 보통 피부와 머리카락, 눈동자 색을 나타낸다.</p>
+                <p class="text-gray-600 mb-4"><strong>두 번째,</strong> 개인의 피부와 머리카락, 눈동자 색에 가장 잘 어울리는 색을 의미한다. 개인마다 가지고 있는 고유의 색이 다르기 때문에 개인에게 어울리는 색이나 그렇지 못한 색을 구분하여 찾아낼 수 있다.</p>
+            </div>
+            <div class="image-wrapper">
+                <div class="border-dashed">
+                    <p class="text-gray-500">퍼스널 컬러 진단을 위한 사진을 첨부해주세요.</p>
+                    <!-- Placeholder for image upload -->
+                    <div class="mt-2 button-wrapper">
+                        <button id="uploadButton" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">사진 업로드</button>
+                        <input type="file" id="fileInput" style="display: none;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="bg-green-500 text-white px-6 py-3 rounded hover:bg-green-600 mt-4">진단하기</button>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 ColorFinder. All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+
+<script>
+    document.getElementById('uploadButton').addEventListener('click', function() {
+        document.getElementById('fileInput').click();
+    });
+
+    document.getElementById('fileInput').addEventListener('change', function(event) {
+        const file = event.target.files[0];
+        if (file) {
+            console.log('File selected:', file.name);
+            // 여기서 파일을 서버로 업로드하는 코드를 추가할 수 있습니다.
+            // 예를 들어, 파일을 FormData로 감싸고 AJAX 요청을 보내는 방식으로 처리할 수 있습니다.
+            const formData = new FormData();
+            formData.append('file', file);
+
+            fetch('/upload-endpoint', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+                // 서버 응답 처리
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    });
+</script>
+
+</body>
+</html>

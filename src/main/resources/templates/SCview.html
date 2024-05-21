@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorFinder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                },
+            },
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .tab-active {
+            border-bottom: 2px solid black;
+            color: black;
+        }
+
+        .tab:hover {
+            color: black;
+        }
+
+        .header-link:hover {
+            text-decoration: underline;
+        }
+
+        .content-wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .text-wrapper {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .image-wrapper {
+            flex: 1;
+            margin-left: 20px; /* 변경 */
+            height: 300px;
+        }
+
+        .border-dashed {
+            border-radius: 8px;
+            border: 2px dashed #e2e8f0;
+            padding: 20px;
+            margin-bottom: 20px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .button-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .image-upload-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 16px;
+        }
+        .image-upload {
+        width: 500px;
+        height: 100px;
+        object-fit: contain;
+        }
+        .text-highlight {
+            background-color: rgba(255, 105, 180, 0.3); /* 연핑크 색상 */
+            padding: 0 0.2em; /* 좀 더 직관적인 크기로 조정 */
+        }
+
+        .keyword-highlight {
+            color: #0047ab; /* 진한 하늘색 */
+        }
+        .description-text {
+        font-size: 19px; /* 텍스트 크기 조정 */
+    }
+        .description-text2 {
+        font-size: 25px; /* 텍스트 크기 조정 */
+    }
+
+
+
+    </style>
+</head>
+
+<body class="bg-white text-gray-800 ">
+
+<div class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-gray-100 py-4">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-2xl font-bold">ColorFinder</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="font-semibold">로그인</a></li>
+                    <li><a href="#" class="font-semibold">회원가입</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-6 py-8">
+        <!-- Tabs -->
+        <div class="flex space-x-4 mb-6">
+            <a href="#" class="tab font-semibold">쇼핑몰</a>
+            <a href="#" class="tab tab-active font-semibold">퍼스널컬러 진단</a>
+            <a href="#" class="tab font-semibold">커뮤니티</a>
+            <a href="#" class="tab font-semibold">마이페이지</a>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="text-wrapper">
+                <h2 class="text-xl font-semibold text-gray-700 mb-4">
+                    <span class="text-highlight description-text2">여름 쿨톤</span>
+                </h2>
+                <br>
+                <p class="text-gray-600 mb-4 description-text"><strong>부드럽고 우아하며 낭만적인 이미지</strong>의 당신은 소프트하고 쿨한 색상들이 당신을 더욱 돋보이게 해 줍니다. 흐린 회색이 가미된 색상들은 차분하고 세련된 이미지로 만들어 줄 것입니다.</p>
+                <br>
+                <p class="text-gray-600 mb-4 description-text"><strong>'여름' 색의 특징: </strong> 시원함(쿨톤), 밝음(고명도), 뽀얗고 부드러움(탁색)</p>
+                <br>
+                <p class="text-gray-600 mb-4 "><span class="keyword-highlight">#우아한 #부드러운 #여성스러운 #온화한 #세련된</p>
+            </div>
+
+            <div class="image-wrapper">
+                <div class="image-upload-container" style="display: flex; justify-content: center; align-items: center;">
+                    <img src="/static/SC/SC0.png" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-xl font-semibold text-gray-700 mb-4">사용자와 퍼스널컬러가 같은 연예인</h2>
+        <div class="image-upload-container">
+            <img src="/static/SC/SC1.jpeg" class="image-upload" style="width: 250px; height: 250px; object-fit: cover;">
+            <img src="/static/SC/SC2.jpeg" class="image-upload" style="width: 250px; height: 250px; object-fit: cover;">
+            <img src="/static/SC/SC3.jpeg" class="image-upload" style="width: 250px; height: 250px; object-fit: cover;">
+            <img src="/static/SC/SC4.jpeg" class="image-upload" style="width: 250px; height: 250px; object-fit: cover;">
+            <img src="/static/SC/SC5.jpeg" class="image-upload" style="width: 250px; height: 250px; object-fit: cover;">
+        </div>
+        <div class="mb-4"></div>
+        <button class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600">추천 옷 알아보기</button>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 ColorFinder. All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+</body>
+
+</html>
