@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>회원 가입</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <style>
+        .gradient-custom {
+          background: linear-gradient(to right, rgba(254, 238, 229, 1), rgba(229, 193, 197, 1))
+        }
+    </style>
+</head>
+<body class="gradient-custom">
+<section class="d-flex vh-100">
+    <div class="container-fluid row justify-content-center align-content-center">
+        <div class="card bg-dark" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+                <h2 class="text-white">SIGN UP</h2>
+                <p class="text-white-50 mt-2 mb-5">서비스 사용을 위한 회원 가입</p>
+
+                <div class = "mb-2">
+                    <form th:action="@{/user}" method="POST">
+                        <!-- 토큰을 추가하여 CSRF 공격 방지 -->
+                        <input type="hidden" th:name="${_csrf?.parameterName}" th:value="${_csrf?.token}" />
+                        <div class="mb-3">
+                            <label class="form-label text-white">Email address</label>
+                            <input type="email" class="form-control" name="email">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-white">Password</label>
+                            <input type="password" class="form-control" name="password">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-white">Nickname</label>
+                            <input type="text" class="form-control" name="nickname">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-white">Personal Color</label>
+                            <select class="form-control" name="colorId">
+                                <option value="SW">봄 웜톤</option>
+                                <option value="SC">여름 쿨톤</option>
+                                <option value="AW">가을 웜톤</option>
+                                <option value="WC">겨울 쿨톤</option>
+                                <option value="">모름</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-white">Gender</label><br>
+                            <select class="form-control" name="gender">
+                                <option value="W">여성</option>
+                                <option value="M">남성</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>

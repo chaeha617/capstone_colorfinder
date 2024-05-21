@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorFinder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'warm-spring': '#F2F5A9',
+                        'cool-summer': '#F5A9D0',
+                        'warm-autumn': '#F5D0A9',
+                        'cool-winter': '#D0A9F5',
+                    }
+                },
+            },
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .tab-active {
+            border-bottom: 2px solid black;
+            color: black;
+        }
+        .tab {
+            transition: color 0.3s;
+        }
+        .tab:hover {
+            color: black;
+        }
+        .filter-button {
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .filter-button:hover {
+            background-color: #e2e8f0;
+            color: black;
+        }
+        .active-filter {
+            background-color: #e2e8f0;
+            color: black;
+        }
+        .search-icon {
+            cursor: pointer;
+        }
+        .pagination-active {
+            background-color: #e2e8f0;
+            color: black;
+        }
+        .product-grid {
+            margin-top: 2rem;
+        }
+        .ai-recommendation {
+            background-color: #efffed;
+            border: 2px solid #e2e8f0;
+            padding: 1rem;
+            margin-bottom: 1rem;
+        }
+        .ai-recommendation h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .temperature {
+            font-size: 1.25rem;
+            color: #4a5568;
+            font-weight: bold;
+        }
+        .product-grid .border-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        border-radius: 0.375rem; /* AI 추천 칸과 동일한 border radius 설정 */
+        border: 2px solid #e2e8f0; /* AI 추천 칸과 동일한 border 색상 설정 */
+    }
+
+        .product-grid img {
+            flex-grow: 1;
+            object-fit: cover;
+            border-top-left-radius: 0.375rem; /* AI 추천 칸과 동일한 border radius 설정 */
+            border-top-right-radius: 0.375rem; /* AI 추천 칸과 동일한 border radius 설정 */
+        }
+
+        .product-grid .p-4 {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: white;
+        }
+        .search-button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800 ">
+
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="bg-gray-100 py-4">
+            <div class="container mx-auto flex justify-between items-center px-6">
+                <h1 class="text-2xl font-bold">ColorFinder</h1>
+                <nav>
+                    <ul class="flex space-x-4">
+                        <li><a href="#" class="font-semibold">로그인</a></li>
+                        <li><a href="#" class="font-semibold">회원가입</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-grow container mx-auto px-6 py-8">
+            <!-- Tabs -->
+            <div class="flex space-x-4 mb-6">
+                <a href="/colorfinder" class="tab tab-active font-semibold">쇼핑몰</a>
+                <a href="#" class="tab font-semibold">퍼스널컬러 진단</a>
+                <a href="#" class="tab font-semibold">커뮤니티</a>
+                <a href="#" class="tab font-semibold">마이페이지</a>
+            </div>
+
+            <!-- AI Recommendation Section -->
+            <div class="ai-recommendation">
+                <h2>AI 추천</h2>
+                <div class="flex space-x-4">
+                    <!-- Placeholder for AI recommended products -->
+                    <!-- Start of recommended product block -->
+                    <!-- Repeat this block 5 times as per the instructions "AI 추천 칸과" -->
+                    {{#userRecommendList}}
+                    <div class="border-2 border-gray-300 flex-1 bg-white" >
+                        <img src="/CrawligData/{{imageUrl}}" alt="Product Image">
+                        <div class="p-4">
+                            <h3 class="font-semibold">{{productName}}</h3>
+                            <p class="text-gray-500">{{priceFormat}}</p>
+                        </div>
+                    </div>
+                    {{/userRecommendList}}
+                </div>
+                <div class="temperature text-right mt-4">
+                    봄 웜 | {{temp}}°C
+                </div>
+            </div>
+
+
+            <!-- Filters -->
+            <div class="flex flex-wrap items-center gap-4 mb-6">
+                <a href="#" onclick="applyFilter('cate', 'OU')" class="filter-button font-semibold px-4 py-2 border-2 border-gray-300 rounded">아우터</a>
+                <a href="#" onclick="applyFilter('cate', 'TO')" class="filter-button font-semibold px-4 py-2 border-2 border-gray-300 rounded">상의</a>
+                <a href="#" onclick="applyFilter('cate', 'PA')" class="filter-button font-semibold px-4 py-2 border-2 border-gray-300 rounded">하의</a>
+                <a href="#" onclick="applyFilter('cate', 'DE')" class="filter-button font-semibold px-4 py-2 border-2 border-gray-300 rounded">데님</a>
+                <a href="#" onclick="applyFilter('cate', 'SK')" class="filter-button font-semibold px-4 py-2 border-2 border-gray-300 rounded">치마</a>
+                <a href="#" onclick="applyFilter('cate', 'OP')" class="filter-button font-semibold px-4 py-2 border-2 border-gray-300 rounded">원피스</a>
+
+                <div class="relative ml-auto">
+                    <div class="flex items-center">
+                        <input id="searchInput" type="text" placeholder="검색어 입력" class="border-2 border-gray-300 rounded px-4 py-2 mr-2">
+                        <button id="searchButton" onclick="applySearch()" class="search-button font-semibold px-4 py-2 border-2 border-gray-300 rounded">검색</button>
+                        <div class="relative ml-auto">
+                            <button id="filter-dropdown-button" class="filter-button font-semibold px-4 py-2 border-2 border-gray-300 rounded">
+                                <svg id="filter-dropdown-icon" class="w-6 h-6 ml-2 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 6H21M8 12H21M8 18H21M3 6H3.01M3 12H3.01M3 18H3.01"></path>
+                                </svg>
+                            </button>
+                            <div id="filter-dropdown-menu" class="absolute hidden bg-white border border-gray-300 mt-2 py-2 w-40 rounded-md shadow-lg">
+                                <a href="" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">인기순</a>
+                                <a href="#" onclick="applySort('id')" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">최신순</a>
+                                <a href="#" onclick="applySort('lowPrice')" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">저가순</a>
+                                <a href="#" onclick="applySort('highPrice')" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">고가순</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" onclick="applyFilter('personalcolor', 'SW')" class="filter-button font-semibold px-4 py-2 border-2 border-gray-300 rounded bg-warm-spring">봄웜톤</a>
+            <a href="#" onclick="applyFilter('personalcolor', 'SC')" class="filter-button font-semibold px-4 py-2 border-2 border-gray-300 rounded bg-cool-summer">여름쿨톤</a>
+            <a href="#" onclick="applyFilter('personalcolor', 'AW')" class="filter-button font-semibold px-4 py-2 border-2 border-gray-300 rounded bg-warm-autumn">가을웜톤</a>
+            <a href="#" onclick="applyFilter('personalcolor', 'WC')" class="filter-button font-semibold px-4 py-2 border-2 border-gray-300 rounded bg-cool-winter">겨울쿨톤</a>
+            <div class="flex items-center">
+            </div>
+
+            <script>
+                document.addEventListener("DOMContentLoaded", function() {
+                    const filterButton = document.getElementById("filter-dropdown-button");
+                    const filterMenu = document.getElementById("filter-dropdown-menu");
+                    const filterIcon = document.getElementById("filter-dropdown-icon");
+
+                    // 필터링 버튼 클릭 시 드롭다운 메뉴를 토글하고 아이콘의 회전을 처리합니다.
+                    filterButton.addEventListener("click", function() {
+                        filterMenu.classList.toggle("hidden");
+                        filterIcon.classList.toggle("rotate-180");
+                    });
+
+                    // 문서를 클릭했을 때 필터링 버튼과 관련 없는 영역을 클릭하면 드롭다운 메뉴를 숨깁니다.
+                    document.addEventListener("click", function(event) {
+                        if (!filterButton.contains(event.target)) {
+                            filterMenu.classList.add("hidden");
+                            // 아이콘을 원래 상태로 되돌림
+                            filterIcon.classList.remove("rotate-180");
+                        }
+                    });
+                });
+            </script>
+
+
+    <!-- Product Grid -->
+    <div class="grid grid-cols-5 gap-4 mb-6 product-grid">
+        <!-- Placeholder for products -->
+        <!-- Using Unsplash images as placeholders -->
+        <!-- Repeat this block for each product -->
+        <!-- Start of product block -->
+        <!-- Repeat this block 25 times as per the instructions -->
+        <!-- First row -->
+        {{#productList}}
+        <a href="/product/{{productId}}" class="border-2 border-gray-300">
+        <img src="/CrawligData/{{imageUrl}}" alt="Product Image">
+            <div class="p-4">
+                <h3 class="font-semibold">{{productName}}</h3>
+                <p class="text-gray-500">{{priceFormat}}</p>
+            </div>
+        </a>
+        {{/productList}}
+        <!-- Repeat the above block three more times to create a total of five rows -->
+    </div>
+
+
+
+    <!-- Pagination -->
+    <div class="flex justify-center space-x-2">
+        <a href="#" class="px-4 py-2 border-2 border-gray-300 pagination-active">1</a>
+        <a href="#" class="px-4 py-2 border-2 border-gray-300">2</a>
+        <a href="#" class="px-4 py-2 border-2 border-gray-300">3</a>
+        <a href="#" class="px-4 py-2 border-2 border-gray-300">4</a>
+        <a href="#" class="px-4 py-2 border-2 border-gray-300">5</a>
+    </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 ColorFinder. All rights reserved.</p>
+        </div>
+    </footer>
+    </div>
+</body>
+<script>
+    // 필터 적용 함수
+    function applyFilter(filterType, value) {
+        var urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has(filterType) && urlParams.get(filterType) === value) {
+            urlParams.delete(filterType);
+        } else {
+            urlParams.set(filterType, value);
+        }
+        window.location.href = window.location.pathname + '?' + urlParams.toString();
+   }
+
+    // 정렬 적용 함수
+    function applySort(sortBy) {
+        var urlParams = new URLSearchParams(window.location.search);
+        urlParams.set('sortBy', sortBy);
+        window.location.href = window.location.pathname + '?' + urlParams.toString();
+    }
+
+    // 검색 적용 함수 (예시)
+    function applySearch() {
+        var searchValue = document.getElementById('searchInput').value.trim();
+        if (searchValue !== '') {
+            var urlParams = new URLSearchParams(window.location.search);
+            urlParams.set('search', searchValue);
+            window.location.href = window.location.pathname + '?' + urlParams.toString();
+        }
+    }
+</script>
+</html>

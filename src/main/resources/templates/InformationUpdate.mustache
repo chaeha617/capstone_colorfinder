@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorFinder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .tab-active {
+            border-bottom: 2px solid black;
+            color: black;
+        }
+        .tab:hover {
+            color: black;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+<div class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-gray-100 py-4">
+        <div class="container mx-auto flex justify-between items-center px-6">
+            <h1 class="text-2xl font-bold">ColorFinder</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#" class="font-semibold">로그인</a></li>
+                    <li><a href="#" class="font-semibold">회원가입</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-6 py-8">
+        <!-- Tabs -->
+        <div class="flex space-x-4 mb-6">
+            <a href="#" class="tab font-semibold">쇼핑몰</a>
+            <a href="#" class="tab font-semibold">퍼스널컬러 진단</a>
+            <a href="#" class="tab font-semibold">커뮤니티</a>
+            <a href="./OrderList.html" class="tab tab-active font-semibold">마이페이지</a>
+        </div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+            <aside class="w-1/4 float-left">
+                <ul class="bg-blue shadow rounded-lg p-4">
+                    <li class="py-2"><a href="./OrderList.html" class="text-gray-700 hover:text-gray-900">주문목록</a></li>
+                    <a href="/USERS/{{userId}}/update" class="tab font-semibold">정보수정</a>
+                    <li class="py-2"><a href="./Cart.html" class="text-gray-700 hover:text-gray-900">장바구니</a></li>
+                    <li class="py-2"><a href="./MyPost.html" class="text-gray-700 hover:text-gray-900">나의 글</a></li>
+                    <li class="py-2"><a href="./Scrap.html" class="text-gray-700 hover:text-gray-900">스크랩</a></li>
+                </ul>
+            </aside>
+            <main class="w-3/4 float-right">
+                <form id="updateUserForm" method="post">
+                    <div class="bg-white shadow rounded-lg p-4 flex">
+                        <!-- 왼쪽 섹션 -->
+                        <div class="w-1/2 pr-4">
+                            <h1 class="text-lg font-semibold mb-4">회원 정보</h1>
+                            <p class="mb-2"><strong>이메일:</strong> <span id="email">{{email}}</span></p>
+                            <p class="mb-2"><strong>닉네임:</strong> <span id="nickname">{{nickname}}</span></p>
+                            <p class="mb-2"><strong>퍼스널컬러:</strong> <span id="colorId">{{colorId}}</span></p>
+                        </div>
+                        <!-- 오른쪽 섹션 -->
+                        <div class="w-1/2 pl-4">
+                            <label class="text-black text-lg font-semibold mb-2" for="nickname">닉네임</label>
+                            <input name="nickname" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline bg-gray-100" id="nickname" type="text" placeholder="닉네임">
+                            <label class="text-black text-lg font-semibold mb-2 mt-4" for="personalColor">퍼스널 컬러</label>
+                            <select name="colorId" id="personal-color" class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline">
+                                <option value="SW">봄 웜톤</option>
+                                <option value="SC">여름 쿨톤</option>
+                                <option value="AW">가을 웜톤</option>
+                                <option value="WC">겨울 쿨톤</option>
+                            </select>
+                            <button id="submitButton" type="button" class="mt-4 py-2 px-4 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </main>
+            <div class="clear-both"></div>
+        </div>
+        <!-- Footer -->
+        <footer class="bg-gray-100 py-4">
+            <div class="container mx-auto text-center">
+                <p>&copy; 2024 ColorFinder. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+</div>
+<script>
+    // Submit 버튼 클릭 시 실행되는 함수
+    document.getElementById('submitButton').addEventListener('click', function() {
+        // 사용자 ID 가져오기
+        var userId = "{{userId}}";
+        // 폼 action 속성에 동적으로 URL 설정
+        document.getElementById('updateUserForm').action = "/users/" + {{userId}} + "/update";
+        // 폼 제출
+        document.getElementById('updateUserForm').submit();
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        // 사용자의 퍼스널 컬러 값에 따라 올바른 단어를 선택하여 출력
+        var colorId = "{{colorId}}";
+        var colorName = "";
+
+        switch (colorId) {
+            case "SW":
+                colorName = "봄 웜톤";
+                break;
+            case "SC":
+                colorName = "여름 쿨톤";
+                break;
+            case "AW":
+                colorName = "가을 웜톤";
+                break;
+            case "WC":
+                colorName = "겨울 쿨톤";
+                break;
+            default:
+                colorName = "없음";
+        }
+
+        // HTML에 선택한 단어 출력
+        document.getElementById("colorId").innerText = colorName;
+    });
+</script>
+</body>
+</html>

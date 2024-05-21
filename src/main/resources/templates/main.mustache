@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+</head>
+<body>
+<h1>Welcome to the Main Page</h1>
+<p>{{userId}}</p>
+<!-- 로그아웃 버튼 -->
+<form action="/logout" method="post">
+    <button type="submit">로그아웃</button>
+</form>
+
+<!-- Main Content -->
+<main class="flex-grow container mx-auto px-6 py-8">
+    <!-- Tabs -->
+    <div class="flex space-x-4 mb-6">
+        <!-- 각 탭에 대한 내용 -->
+    </div>
+    <!-- 메인 페이지 내용 -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+        <!-- 사용자 정보 수정 버튼 또는 링크 -->
+        <a href="/USERS/{{userId}}/update" class="text-blue-500 hover:underline">정보 수정</a>
+    </div>
+    <!-- Footer -->
+    <!-- 푸터 내용 -->
+</main>
+
+</body>
+</html>
