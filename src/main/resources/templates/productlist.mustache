@@ -109,8 +109,8 @@
                 <h1 class="text-2xl font-bold">ColorFinder</h1>
                 <nav>
                     <ul class="flex space-x-4">
-                        <li><a href="#" class="font-semibold">로그인</a></li>
-                        <li><a href="#" class="font-semibold">회원가입</a></li>
+                        <li><a href="/login" class="font-semibold">로그인</a></li>
+                        <li><a href="/signup" class="font-semibold">회원가입</a></li>
                     </ul>
                 </nav>
             </div>
@@ -134,12 +134,15 @@
                     <!-- Start of recommended product block -->
                     <!-- Repeat this block 5 times as per the instructions "AI 추천 칸과" -->
                     {{#userRecommendList}}
+
                     <div class="border-2 border-gray-300 flex-1 bg-white" >
-                        <img src="/CrawligData/{{imageUrl}}" alt="Product Image">
-                        <div class="p-4">
-                            <h3 class="font-semibold">{{productName}}</h3>
-                            <p class="text-gray-500">{{priceFormat}}</p>
-                        </div>
+                        <a href="product/{{productId}}">
+                            <img src="/CrawligData/{{imageUrl}}" alt="Product Image">
+                            <div class="p-4">
+                                <h3 class="font-semibold">{{productName}}</h3>
+                                <p class="text-gray-500">{{priceFormat}}</p>
+                            </div>
+                        </a>
                     </div>
                     {{/userRecommendList}}
                 </div>
