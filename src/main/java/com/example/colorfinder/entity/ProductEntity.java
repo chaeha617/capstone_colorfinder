@@ -26,7 +26,7 @@ public class ProductEntity {
     private String gender;
 
     @Column(name = "temp")
-    private String temp;
+    private Integer temp;
 
     @Column(name = "cateId")
     private String cateId;

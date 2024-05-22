@@ -18,7 +18,7 @@ public class ProductDTO { //회원 정보를 필드로 정의
     private String productName;
     private Integer productPrice;
     private String gender;
-    private String Temp;
+    private Integer Temp;
     private String cateId;
     private String colorId;
     private String imageUrl;

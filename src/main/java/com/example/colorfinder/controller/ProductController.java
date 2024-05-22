@@ -4,10 +4,13 @@ import com.example.colorfinder.dto.ProductDTO;
 import com.example.colorfinder.entity.USERS;
 import com.example.colorfinder.service.ProductService;
 import com.example.colorfinder.service.UserService;
+import com.samskivert.mustache.MustacheException;
 import jakarta.validation.constraints.Null;
 import lombok.RequiredArgsConstructor;
 import org.apache.catalina.User;
 import org.springframework.expression.spel.ast.NullLiteral;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
@@ -23,6 +26,8 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.stream.Collectors;
 import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
@@ -34,17 +39,25 @@ public class ProductController {
     private final ProductService productService;
     private final UserService userService;
 
-    @RequestMapping(value = {"/colorfinder/{userId}", "/colorfinder"})
+    @RequestMapping("/colorfinder")
     public String colorfinderMain(
-            @PathVariable(required = false) Long userId,
             @RequestParam(name = "cate", defaultValue = "ALL") String category,
             @RequestParam(name = "personalcolor", defaultValue = "ALL") String personalcolor,
             @RequestParam(name = "sortBy", defaultValue = "id") String sortBy,
             @RequestParam(name = "search", defaultValue = "*") String searchWord,
             Model model)
     throws  ClassNotFoundException, SQLException{
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        Long userId = Long.parseLong(authentication.getName());
 
-        //USERS user = userService.getUserById(userId);
+        USERS user = userService.getUserById(userId);
+
+        String userPersonalcolor = "퍼스널컬러를 진단하여 알아보세요!";
+        System.out.println(user.getPersonalColor());
+        if (user.getPersonalColor().getColorName()!=null){
+            userPersonalcolor = user.getPersonalColor().getColorName();
+        }
+        model.addAttribute("userPersonalColor", userPersonalcolor);
 
         List<ProductDTO> productDTOList = new ArrayList<>();
 
@@ -54,6 +67,8 @@ public class ProductController {
         }else {
             productDTOList = productService.findByCateId(category);
         }
+
+        List<ProductDTO> userRecommendList = productDTOList;
 
         //personalcolor 필터링 하는 부분
         if (!personalcolor.equals("ALL") && !productDTOList.isEmpty()) {
@@ -91,10 +106,16 @@ public class ProductController {
         temp = getTemp();
         model.addAttribute("temp",temp);
 
+            if (userId!=null && user.getPersonalColor().getColorName()!=null){
+                int finalTemp = temp;
+                productDTOList = productDTOList.stream()
+                        .filter(product -> product.getColorId().equals(user.getPersonalColor()) && product.getTemp() < finalTemp)
+                        .collect(Collectors.toList());
+            }
+
         //유저에게 맞는 제품 추천(기온 + 퍼컬)
-        List<ProductDTO> userRecommendList = productService.findAll();
-        userRecommendList = userRecommendList.subList(0,5);
         model.addAttribute("userRecommendList", userRecommendList);
+
 
         model.addAttribute("productList", productDTOList);
         return "productlist";
