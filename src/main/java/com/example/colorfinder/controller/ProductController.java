@@ -1,7 +1,10 @@
 package com.example.colorfinder.controller;
 
+import com.example.colorfinder.dto.CartDTO;
 import com.example.colorfinder.dto.ProductDTO;
+import com.example.colorfinder.entity.CartEntity;
 import com.example.colorfinder.entity.USERS;
+import com.example.colorfinder.service.CartService;
 import com.example.colorfinder.service.ProductService;
 import com.example.colorfinder.service.UserService;
 import com.samskivert.mustache.MustacheException;
@@ -38,7 +41,11 @@ public class ProductController {
 
     private final ProductService productService;
     private final UserService userService;
+    private final CartService cartService;
 
+
+
+    //메인페이지
     @RequestMapping("/colorfinder")
     public String colorfinderMain(
             @RequestParam(name = "cate", defaultValue = "ALL") String category,
@@ -47,11 +54,14 @@ public class ProductController {
             @RequestParam(name = "search", defaultValue = "*") String searchWord,
             Model model)
     throws  ClassNotFoundException, SQLException{
+
+        //로그인 확인
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         Long userId = Long.parseLong(authentication.getName());
 
         USERS user = userService.getUserById(userId);
 
+        //로그인한 회원 퍼스널컬러 추출
         String userPersonalcolor = "퍼스널컬러를 진단하여 알아보세요!";
         System.out.println(user.getPersonalColor());
         if (user.getPersonalColor().getColorName()!=null){
@@ -59,6 +69,7 @@ public class ProductController {
         }
         model.addAttribute("userPersonalColor", userPersonalcolor);
 
+        //상품목록 생성
         List<ProductDTO> productDTOList = new ArrayList<>();
 
         //category 필터링 하는 부분
@@ -83,16 +94,7 @@ public class ProductController {
             }
         }
 
-        //정렬하는 부분
-        if (sortBy.equals("lowPrice")) {
-            productDTOList = productDTOList.stream().sorted(Comparator.comparing(ProductDTO::getProductPrice)).collect(Collectors.toList());
-        } else if (sortBy.equals("highPrice")) {
-            productDTOList = productDTOList.stream().sorted(Comparator.comparing(ProductDTO::getProductPrice).reversed()).collect(Collectors.toList());
-        }else{
-            productDTOList = productDTOList.stream().sorted(Comparator.comparing(ProductDTO::getProductId)).collect(Collectors.toList());
-
-        }
-
+        //검색
         if (!searchWord.equals("*") && !productDTOList.isEmpty()) {
             final String searchLowerCase = searchWord.toLowerCase();
             System.out.println(searchLowerCase);
@@ -101,32 +103,74 @@ public class ProductController {
                     .collect(Collectors.toList());
         }
 
+        //정렬하는 부분
+        if (sortBy.equals("lowPrice")) {
+            productDTOList = productDTOList.stream().sorted(Comparator.comparing(ProductDTO::getProductPrice)).collect(Collectors.toList());
+        } else if (sortBy.equals("highPrice")) {
+            productDTOList = productDTOList.stream().sorted(Comparator.comparing(ProductDTO::getProductPrice).reversed()).collect(Collectors.toList());
+        }else{
+            productDTOList = productDTOList.stream().sorted(Comparator.comparing(ProductDTO::getProductId)).collect(Collectors.toList());
+        }
+        model.addAttribute("productList", productDTOList);
+
+
         //기상청 API에서 기온 불러오기
         int temp = 0;
         temp = getTemp();
         model.addAttribute("temp",temp);
 
-            if (userId!=null && user.getPersonalColor().getColorName()!=null){
-                int finalTemp = temp;
-                productDTOList = productDTOList.stream()
-                        .filter(product -> product.getColorId().equals(user.getPersonalColor()) && product.getTemp() < finalTemp)
-                        .collect(Collectors.toList());
-            }
 
         //유저에게 맞는 제품 추천(기온 + 퍼컬)
+        if (userId!=null && user.getPersonalColor().getColorName()!=null){
+            int finalTemp = temp;
+            productDTOList = productDTOList.stream()
+                    .filter(product -> product.getColorId().equals(user.getPersonalColor()) && product.getTemp() < finalTemp)
+                    .collect(Collectors.toList());
+        }
         model.addAttribute("userRecommendList", userRecommendList);
 
-
-        model.addAttribute("productList", productDTOList);
         return "productlist";
     }
 
-    @GetMapping("product/{id}") //상품 상세 페이지
+    //상품 상세 페이지
+    @RequestMapping(value = "product/{id}", method = RequestMethod.GET)
     public String productInfo(@PathVariable Long id, Model model) {
         ProductDTO productDTO = productService.findById(id);
         model.addAttribute("product",productDTO);
         return "product";
     }
+
+
+    //구매하기를 눌렀을때
+    @RequestMapping(value = "/happy", method = RequestMethod.POST)
+    public String saveOrder(Long productId, String action, Integer productCnt, String productSize) {
+        Long userId = null;
+        try{
+            Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+            userId = Long.parseLong(authentication.getName());
+        }catch (Exception e){
+            return "redirect:/login";
+        }
+        if (action.equals("cart")){
+            ProductDTO product = productService.findById(productId);
+
+            CartDTO cart = new CartDTO();
+            cart.setCartCnt(productCnt);
+            cart.setProductSize(productSize);
+            cart.setProductId(productId);
+            cart.setUserId(userId);
+            cart.setProduct(product);
+            cart.setProductName(product.getProductName());
+            cart.setTotalPrice(product.getProductPrice() * productCnt);
+
+            cartService.save(cart);
+        }else{
+
+        }
+
+        return  "redirect:/colorfinder";
+    }
+
 
 
 
@@ -161,6 +205,7 @@ public class ProductController {
             System.out.println("Error : " + s);
         }
     }
+
 
     // [in] x, y : 예보지점 X, Y 좌표
     //=> 행정구역별 x,y 값은 참고문서(https://www.data.go.kr/data/15084084/openapi.do) 내려받아 확인
