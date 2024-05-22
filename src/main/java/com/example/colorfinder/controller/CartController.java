@@ -30,6 +30,7 @@ public class CartController {
 
     @PostMapping("/cart/pay")
     public String payFor(@RequestParam("selectedProductIds") String selectedProductIds, Model model){
+        System.out.println(selectedProductIds);
         List<Long> ids = Arrays.stream(selectedProductIds.split(","))
                 .map(Long::parseLong)
                 .collect(Collectors.toList());

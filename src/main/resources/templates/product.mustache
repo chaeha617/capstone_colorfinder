@@ -63,7 +63,7 @@
                     <div class="md:w-1/2 p-4">
                         <h1 class="text-2xl font-bold mb-2">{{productName}}</h1>
                         <p class="text-lg mb-4">상품 가격: {{priceFormat}}원</p>
-                        <form id="productForm" action="/happy" method="POST">
+                        <form id="productForm" action="/product/select" method="POST">
                             <input type="hidden" id="action" name="action" value="">
                             <input type="hidden" id="productId" name="productId" value={{productId}}>
                             <div class="mb-4">

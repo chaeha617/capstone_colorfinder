@@ -142,8 +142,8 @@ public class ProductController {
 
 
     //구매하기를 눌렀을때
-    @RequestMapping(value = "/happy", method = RequestMethod.POST)
-    public String saveOrder(Long productId, String action, Integer productCnt, String productSize) {
+    @RequestMapping(value = "/product/select", method = RequestMethod.POST)
+    public String saveOrder(Long productId, String action, Integer productCnt, String productSize, Model model) {
         Long userId = null;
         try{
             Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
@@ -151,21 +151,24 @@ public class ProductController {
         }catch (Exception e){
             return "redirect:/login";
         }
+        ProductDTO product = productService.findById(productId);
+
+        CartDTO cart = new CartDTO();
+        cart.setCartCnt(productCnt);
+        cart.setProductSize(productSize);
+        cart.setProductId(productId);
+        cart.setUserId(userId);
+        cart.setProduct(product);
+        cart.setProductName(product.getProductName());
+        cart.setTotalPrice(product.getProductPrice() * productCnt);
+
+        Long cartId = cartService.save(cart);
+
         if (action.equals("cart")){
-            ProductDTO product = productService.findById(productId);
-
-            CartDTO cart = new CartDTO();
-            cart.setCartCnt(productCnt);
-            cart.setProductSize(productSize);
-            cart.setProductId(productId);
-            cart.setUserId(userId);
-            cart.setProduct(product);
-            cart.setProductName(product.getProductName());
-            cart.setTotalPrice(product.getProductPrice() * productCnt);
-
-            cartService.save(cart);
-        }else{
-
+            return "redirect:/cart/"+userId;
+        }else if (action.equals("order")){
+            model.addAttribute("orderList", cart);
+            return "payFor";
         }
 
         return  "redirect:/colorfinder";
