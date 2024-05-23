@@ -119,13 +119,15 @@ public class ProductController {
         temp = getTemp();
         model.addAttribute("temp",temp);
 
-
         //유저에게 맞는 제품 추천(기온 + 퍼컬)
-        if (userId!=null && user.getPersonalColor().getColorName()!=null){
+        if (userId!=null && user.getPersonalColor().getColorId()!=null){
             int finalTemp = temp;
-            productDTOList = productDTOList.stream()
-                    .filter(product -> product.getColorId().equals(user.getPersonalColor()) && product.getTemp() < finalTemp)
+            userRecommendList = userRecommendList.stream()
+                    .filter(product -> product.getColorId().equals(user.getPersonalColor().getColorId()) && product.getTemp() < finalTemp)
                     .collect(Collectors.toList());
+        }
+        if(userRecommendList.size() > 5){
+            userRecommendList = userRecommendList.subList(0,5);
         }
         model.addAttribute("userRecommendList", userRecommendList);
 
