@@ -55,11 +55,13 @@ public class ProductController {
             Model model)
     throws  ClassNotFoundException, SQLException{
 
+
         //로그인 확인
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         Long userId = Long.parseLong(authentication.getName());
 
         USERS user = userService.getUserById(userId);
+
 
         //로그인한 회원 퍼스널컬러 추출
         String userPersonalcolor = "퍼스널컬러를 진단하여 알아보세요!";
