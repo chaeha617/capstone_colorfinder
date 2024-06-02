@@ -26,27 +26,12 @@
 
 <div class="min-h-screen flex flex-col">
     <!-- Header -->
-    <header class="bg-gray-100 py-4">
-        <div class="container mx-auto flex justify-between items-center px-6">
-            <img src="/logo.png" alt="COLOR FINDER" WIDTH="150px">
-            <nav>
-                <ul class="flex space-x-4">
-                    <li><a href="/login" class="font-semibold">로그인</a></li>
-                    <li><a href="/signin" class="font-semibold">회원가입</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    {{>layout/loginHeader}}
 
     <!-- Main Content -->
     <main class="flex-grow container mx-auto px-6 py-8">
         <!-- Tabs -->
-        <div class="flex space-x-4 mb-6">
-            <a href="/colorfinder" class="tab tab-active font-semibold">쇼핑몰</a>
-            <a href="/percol01" class="tab font-semibold">퍼스널컬러 진단</a>
-            <a href="/cart" class="tab font-semibold">장바구니</a>
-            <a href="/cart/pay/saveInfo" class="tab font-semibold">마이페이지</a>
-        </div>
+        {{>layout/tabHeader}}
 
         <head>
             <meta charset="UTF-8">
@@ -58,7 +43,7 @@
             {{#product}}
                 <div class="flex flex-col md:flex-row">
                     <div class="md:w-1/2 p-4 text-center grid place-items-center">
-                        <img src="/static/CrawligData/{{imageUrl}}" alt="Product Image" height="187.5px" width="277.5px">
+                        <img src="{{imageUrl}}" alt="Product Image" height="187.5px" width="277.5px">
                     </div>
                     <div class="md:w-1/2 p-4">
                         <h1 class="text-2xl font-bold mb-2">{{productName}}</h1>

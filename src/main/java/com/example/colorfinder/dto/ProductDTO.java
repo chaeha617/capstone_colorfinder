@@ -39,7 +39,7 @@ public class ProductDTO { //회원 정보를 필드로 정의
         productDTO.setColorId(productEntity.getColorId());
 
         DecimalFormat idFormat = new DecimalFormat("000");
-        productDTO.setImageUrl(productEntity.getCateId()+idFormat.format(productEntity.getProductId())+".jpg");
+        productDTO.setImageUrl("/static/CrawligData/"+ productEntity.getCateId()+idFormat.format(productEntity.getProductId())+".jpg");
 
         DecimalFormat commaFormat = new DecimalFormat("#,###,##0");
         productDTO.setPriceFormat(commaFormat.format(productEntity.getProductPrice()));
