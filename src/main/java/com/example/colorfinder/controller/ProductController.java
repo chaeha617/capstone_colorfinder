@@ -43,8 +43,6 @@ public class ProductController {
     private final UserService userService;
     private final CartService cartService;
 
-
-
     //메인페이지
     @RequestMapping("/colorfinder")
     public String colorfinderMain(
@@ -55,21 +53,25 @@ public class ProductController {
             Model model)
     throws  ClassNotFoundException, SQLException{
 
-
-        //로그인 확인
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        Long userId = Long.parseLong(authentication.getName());
-
-        USERS user = userService.getUserById(userId);
-
-
-        //로그인한 회원 퍼스널컬러 추출
         String userPersonalcolor = "퍼스널컬러를 진단하여 알아보세요!";
-        System.out.println(user.getPersonalColor());
-        if (user.getPersonalColor().getColorName()!=null){
-            userPersonalcolor = user.getPersonalColor().getColorName();
+        Long userId = null;
+        USERS user = null;
+        //로그인 확인
+        try{
+            Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+            userId = Long.parseLong(authentication.getName());
+
+            user = userService.getUserById(userId);
+            System.out.println(user.getPersonalColor());
+            if (user.getPersonalColor().getColorName()!=null){
+                userPersonalcolor = user.getPersonalColor().getColorName();
+            }
+        }catch (Exception e){
+            System.out.println("비회원");
         }
         model.addAttribute("userPersonalColor", userPersonalcolor);
+
+        //로그인한 회원 퍼스널컬러 추출
 
         //상품목록 생성
         List<ProductDTO> productDTOList = new ArrayList<>();
@@ -122,11 +124,18 @@ public class ProductController {
         model.addAttribute("temp",temp);
 
         //유저에게 맞는 제품 추천(기온 + 퍼컬)
-        if (userId!=null && user.getPersonalColor().getColorId()!=null){
+        if (user != null){
             int finalTemp = temp;
-            userRecommendList = userRecommendList.stream()
-                    .filter(product -> product.getColorId().equals(user.getPersonalColor().getColorId()) && product.getTemp() < finalTemp)
-                    .collect(Collectors.toList());
+            if (user.getPersonalColor().getColorId()!=null){
+                USERS finalUser = user;
+                userRecommendList = userRecommendList.stream()
+                        .filter(product -> product.getColorId().equals(finalUser.getPersonalColor().getColorId()) && product.getTemp() < finalTemp)
+                        .collect(Collectors.toList());
+            }else {
+                userRecommendList = userRecommendList.stream()
+                        .filter(product -> product.equals(product.getTemp() < finalTemp))
+                        .collect(Collectors.toList());
+            }
         }
         if(userRecommendList.size() > 5){
             userRecommendList = userRecommendList.subList(0,5);

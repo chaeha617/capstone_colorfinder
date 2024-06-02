@@ -44,6 +44,11 @@ public class CustomInterceptor implements HandlerInterceptor {
                     modelAndView.addObject("infoUrl", "/signup");
                 }
             } catch (Exception e) {
+                modelAndView.addObject("loginFlag", "로그인");
+                modelAndView.addObject("loginUrl", "/login");
+                modelAndView.addObject("userInfo", "회원가입");
+                modelAndView.addObject("infoUrl", "/signup");
+
                 System.out.println(e.getMessage());
             }
         }
