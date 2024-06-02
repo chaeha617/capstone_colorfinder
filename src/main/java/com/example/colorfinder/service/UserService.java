@@ -18,7 +18,7 @@ public class UserService {
     private final PersonalColorRepository personalColorRepository;
     private final BCryptPasswordEncoder bCryptPasswordEncoder;
 
-    public Long save(AddUserRequest dto){
+    public Long save(AddUserRequest dto) {
         // PERSONALCOLOR 객체 생성 또는 기존 객체 조회
         PERSONALCOLOR personalColor = personalColorRepository.findByColorId(dto.getColorId())
                 .orElse(new PERSONALCOLOR(dto.getColorId()));
@@ -43,8 +43,10 @@ public class UserService {
         USERS user = userRepository.findById(userId)
                 .orElseThrow(() -> new IllegalArgumentException("해당 ID에 해당하는 사용자를 찾을 수 없습니다: " + userId));
 
-        // 닉네임 변경
-        user.setNickname(request.getNickname());
+        // 닉네임 변경 (입력된 닉네임이 null이거나 빈 문자열이 아닐 경우에만 변경)
+        if (request.getNickname() != null && !request.getNickname().trim().isEmpty()) {
+            user.setNickname(request.getNickname());
+        }
 
         // 퍼스널 컬러 변경
         PERSONALCOLOR personalColor = personalColorRepository.findByColorId(request.getColorId())
@@ -54,9 +56,25 @@ public class UserService {
         // 변경된 정보 저장
         userRepository.save(user);
     }
+    @Transactional
+    public void updateUserPersonalColor(Long userId, String colorId) {
+        // 사용자 정보 조회
+        USERS user = userRepository.findById(userId)
+                .orElseThrow(() -> new IllegalArgumentException("해당 ID에 해당하는 사용자를 찾을 수 없습니다: " + userId));
+
+        // 퍼스널 컬러 정보 조회
+        PERSONALCOLOR personalColor = personalColorRepository.findByColorId(colorId)
+                .orElseThrow(() -> new IllegalArgumentException("해당 퍼스널 컬러를 찾을 수 없습니다: " + colorId));
+
+        // 퍼스널 컬러 업데이트
+        user.setPersonalColor(personalColor);
+
+        // 변경된 정보 저장
+        userRepository.save(user);
+    }
+
     public USERS getUserById(Long userId) {
         return userRepository.findById(userId)
                 .orElseThrow(() -> new IllegalArgumentException("해당 ID에 해당하는 사용자를 찾을 수 없습니다: " + userId));
     }
-
 }

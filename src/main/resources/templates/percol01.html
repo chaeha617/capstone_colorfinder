@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -85,7 +84,6 @@
         }
     </style>
 </head>
-
 <body class="bg-white text-gray-800 ">
 
 <div class="min-h-screen flex flex-col">
@@ -124,52 +122,84 @@
             <div class="image-wrapper">
                 <div class="border-dashed">
                     <p class="text-gray-500">퍼스널 컬러 진단을 위한 사진을 첨부해주세요.</p>
-                    <!-- Placeholder for image upload -->
                     <div class="mt-2 button-wrapper">
-                        <button id="uploadButton" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">사진 업로드</button>
-                        <input type="file" id="fileInput" style="display: none;" />
+                        <input type="file" id="fileUpload" name="file" style="display:none;" accept="image/*">
+                        <button id="uploadButton" class="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-400">
+                            파일 업로드
+                        </button>
+                    </div>
+                    <div id="loadingIndicator" style="display:none;">
+                        <p class="text-gray-500 mt-4">사진 분석 중입니다...</p>
+                    </div>
+                    <div id="resultContainer" style="display:none;">
+                        <p id="resultText" class="text-gray-600 mt-4"></p>
                     </div>
                 </div>
             </div>
         </div>
-        <button class="bg-green-500 text-white px-6 py-3 rounded hover:bg-green-600 mt-4">진단하기</button>
     </main>
 
     <!-- Footer -->
     <footer class="bg-gray-100 py-4">
-        <div class="container mx-auto text-center">
-            <p>&copy; 2024 ColorFinder. All rights reserved.</p>
+        <div class="container mx-auto text-center px-6">
+            <p class="text-gray-600">© 2023 ColorFinder. All rights reserved.</p>
         </div>
     </footer>
 </div>
 
 <script>
-    document.getElementById('uploadButton').addEventListener('click', function() {
-        document.getElementById('fileInput').click();
+    document.getElementById("uploadButton").addEventListener("click", function() {
+        document.getElementById("fileUpload").click();
     });
 
-    document.getElementById('fileInput').addEventListener('change', function(event) {
-        const file = event.target.files[0];
-        if (file) {
-            console.log('File selected:', file.name);
-            // 여기서 파일을 서버로 업로드하는 코드를 추가할 수 있습니다.
-            // 예를 들어, 파일을 FormData로 감싸고 AJAX 요청을 보내는 방식으로 처리할 수 있습니다.
-            const formData = new FormData();
-            formData.append('file', file);
-
-            fetch('/upload-endpoint', {
-                method: 'POST',
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                console.log('Success:', data);
-                // 서버 응답 처리
-            })
-            .catch(error => {
-                console.error('Error:', error);
-            });
+    document.getElementById("fileUpload").addEventListener("change", function() {
+        const fileInput = document.getElementById("fileUpload");
+        if (!fileInput.files.length) {
+            alert("파일을 선택해주세요.");
+            return;
         }
+
+        document.getElementById("uploadButton").style.display = "none";
+        document.getElementById("loadingIndicator").style.display = "block";
+
+        const formData = new FormData();
+        formData.append("file", fileInput.files[0]);
+
+        fetch("/analyze", {
+            method: "POST",
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById("loadingIndicator").style.display = "none";
+            const personalColor = data.personal_color;
+
+            // personalColor에 따라 적절한 뷰로 리디렉션
+            switch (personalColor) {
+                case "AW":
+                    window.location.href = "/AWview";
+                    break;
+                case "SC":
+                    window.location.href = "/SCview";
+                    break;
+                case "SW":
+                    window.location.href = "/SWview";
+                    break;
+                case "WC":
+                    window.location.href = "/WCview";
+                    break;
+                default:
+                    alert("알 수 없는 퍼스널 컬러 결과입니다.");
+                    window.location.href = "/percol01";
+                    break;
+            }
+        })
+        .catch(error => {
+            console.error("Error analyzing image:", error);
+            alert("사진 분석 중 오류가 발생했습니다. 다시 시도해주세요.");
+            document.getElementById("uploadButton").style.display = "block";
+            document.getElementById("loadingIndicator").style.display = "none";
+        });
     });
 </script>
 

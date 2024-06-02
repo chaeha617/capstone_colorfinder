@@ -40,7 +40,10 @@ dependencies {
 	implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6'
 	// 스프링 시큐리티를 테스트하기 위한 의존성 추가
 	implementation 'org.springframework.boot:spring-boot-starter-mustache'
-
+	implementation 'org.apache.httpcomponents:httpclient:4.5.13'
+	implementation 'org.springframework.boot:spring-boot-starter-webflux'  // 추가된 부분
+	implementation 'org.apache.httpcomponents:httpmime:4.5.13'
+	implementation 'io.netty:netty-resolver-dns-native-macos:4.1.68.Final:osx-aarch_64'
 }
 
 tasks.named('test') {

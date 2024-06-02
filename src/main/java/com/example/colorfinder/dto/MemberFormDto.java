@@ -5,12 +5,10 @@ import lombok.Setter;
 import org.hibernate.validator.constraints.Length;
 
 import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
 
 @Getter @Setter
 public class MemberFormDto {
-
 
     @NotEmpty(message = "이메일은 필수 입력 값입니다.")
     @Email(message = "이메일 형식으로 입력해주세요.")

@@ -137,21 +137,25 @@
 
             <div class="image-wrapper">
                 <div class="image-upload-container" style="display: flex; justify-content: center; align-items: center;">
-                    <img src="/static/WC/WC0.png" style="max-width: 100%; height: auto;">
+                    <img src="static/WC/WC0.png" style="max-width: 100%; height: auto;">
                 </div>
             </div>
         </div>
 
         <h2 class="text-xl font-semibold text-gray-700 mb-4">사용자와 퍼스널컬러가 같은 연예인</h2>
         <div class="image-upload-container">
-            <img src="/static/WC/WC1.jpeg" class="image-upload" style="width: 250px; height: 250px; object-fit: cover;">
-            <img src="/static/WC/WC2.jpeg" class="image-upload" style="width: 250px; height: 250px; object-fit: cover;">
-            <img src="/static/WC/WC3.jpeg" class="image-upload" style="width: 250px; height: 250px; object-fit: cover;">
-            <img src="/static/WC/WC4.jpeg" class="image-upload" style="width: 250px; height: 250px; object-fit: cover;">
-            <img src="/static/WC/WC5.jpeg" class="image-upload" style="width: 250px; height: 250px; object-fit: cover;">
+            <img src="static/WC/WC1.jpeg" class="image-upload" style="width: 250px; height: 250px; object-fit: cover;">
+            <img src="static/WC/WC2.jpeg" class="image-upload" style="width: 250px; height: 250px; object-fit: cover;">
+            <img src="static/WC/WC3.jpeg" class="image-upload" style="width: 250px; height: 250px; object-fit: cover;">
+            <img src="static/WC/WC4.jpeg" class="image-upload" style="width: 250px; height: 250px; object-fit: cover;">
+            <img src="static/WC/WC5.jpeg" class="image-upload" style="width: 250px; height: 250px; object-fit: cover;">
         </div>
         <div class="mb-4"></div>
-        <button class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600">추천 옷 알아보기</button>
+        <!-- 추천 옷 알아보기 버튼 -->
+        <button id="recommendClothesButton" class="bg-pink-500 text-white px-6 py-3 rounded hover:bg-blue-600">추천 옷 알아보기</button>
+
+        <!-- 진단 결과 저장하기 버튼 -->
+        <button id="saveDiagnosisButton" class="bg-blue-500 text-white px-6 py-3 rounded hover:bg-blue-600">진단 결과 저장하기</button>
 
     </main>
 
@@ -162,6 +166,32 @@
         </div>
     </footer>
 </div>
+<script>
+    // 추천 옷 알아보기 버튼 클릭 시 실행되는 함수
+    document.getElementById('recommendClothesButton').addEventListener('click', function() {
+        // 추천 옷 알아보기 버튼 클릭 시 /colorfinder로 리디렉션합니다.
+        window.location.href = '/colorfinder';
+    });
+    // 진단 결과 저장하기 버튼 클릭 시 실행되는 함수
+    document.getElementById('saveDiagnosisButton').addEventListener('click', function() {
+        // AJAX 요청을 보냄
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', '/updatePersonalColor', true);
+        xhr.setRequestHeader('Content-Type', 'application/json');
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    // 요청이 성공하면 처리
+                    alert('퍼스널 컬러 정보가 업데이트되었습니다.');
+                } else {
+                    // 요청이 실패하면 처리
+                    alert('퍼스널 컬러 정보 업데이트에 실패했습니다.');
+                }
+            }
+        };
+        xhr.send(JSON.stringify({ colorId: 'SW' })); // 사용자의 퍼스널 컬러를 AW로 설정
+    });
+</script>
 </body>
 
 </html>
