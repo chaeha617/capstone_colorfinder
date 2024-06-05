@@ -21,24 +21,34 @@ import java.time.LocalDateTime;
 public class OrderDTO {
     private Long orderId;
     private Integer orderCnt;
-    private Long product;
+    private ProductDTO product;
+    private Long productId;
     private Long userId;
     private LocalDateTime orderDate;
     private String orderStatus;
     private Integer totalPrice;
     private Long addId;
     private String productSize;
+    private String productName;
+    private Integer productPrice;
+
 
     public static OrderDTO toOrderDTO(OrderEntity orderEntity){
         OrderDTO orderDTO = new OrderDTO();
         orderDTO.setOrderId(orderEntity.getOrderId());
+        orderDTO.setProductId(orderEntity.getProduct().getProductId());
         orderDTO.setOrderCnt(orderEntity.getOrderCnt());
-        orderDTO.setUserId(orderEntity.getUserId());
         orderDTO.setOrderDate(orderEntity.getOrderDate());
         orderDTO.setOrderStatus(orderEntity.getOrderStatus());
         orderDTO.setTotalPrice(orderEntity.getTotalPrice());
-        orderDTO.setAddId(orderEntity.getAddId());
         orderDTO.setProductSize(orderEntity.getProductSize());
+        orderDTO.setAddId(orderEntity.getAddId());
+        orderDTO.setProduct(ProductDTO.toProductDTO(orderEntity.getProduct()));
+        orderDTO.setUserId(orderEntity.getUserId());
+
+        orderDTO.setProductId(orderEntity.getProduct().getProductId());
+        orderDTO.setProductName(orderEntity.getProduct().getProductName());
+        orderDTO.setProductPrice(orderEntity.getProduct().getProductPrice());
 
         return orderDTO;
     }

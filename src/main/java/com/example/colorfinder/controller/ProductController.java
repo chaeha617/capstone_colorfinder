@@ -178,7 +178,7 @@ public class ProductController {
         Long cartId = cartService.save(cart);
 
         if (action.equals("cart")){
-            return "redirect:/cart/"+userId;
+            return "redirect:/cart";
         }else if (action.equals("order")){
             model.addAttribute("orderList", cart);
             return "payFor";

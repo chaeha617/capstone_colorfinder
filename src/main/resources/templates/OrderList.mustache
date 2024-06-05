@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorFinder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                },
+            },
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .tab-active {
+            border-bottom: 2px solid black;
+            color: black;
+        }
+
+        .tab:hover {
+            color: black;
+        }
+
+        .address-info-container {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .address-info {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            font-size: 0.85em;
+            padding: 10px;
+            box-sizing: border-box;
+            width: fit-content;
+        }
+
+        .address-content {
+            text-align: right;
+        }
+
+        .address-content div {
+            margin-bottom: 5px;
+        }
+
+        .address-name {
+            font-weight: bold;
+        }
+
+        .address-details {
+            color: #666;
+        }
+
+        .address-code,
+        .address-tel {
+            color: #888;
+        }
+    </style>
+</head>
+
+<body class="bg-white text-gray-800">
+
+<div class="min-h-screen flex flex-col">
+    <!-- Header -->
+    {{>layout/loginHeader}}
+
+    <!-- Main Content -->
+    <main class="flex-grow container mx-auto px-6 py-8">
+        <!-- Tabs -->
+        {{>layout/tabHeader}}
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+            <aside class="w-1/4 float-left">
+                <ul class="bg-blue shadow rounded-lg p-4">
+                    <li class="py-2"><a href="/cart/pay/saveInfo" class="tab font-semibold">주문목록</a></li>
+                    <li class="py-2"><a href="./InformationUpdate.html" class="text-gray-700 hover:text-gray-900">정보수정</a></li>
+                    <li class="py-2"><a href="/cart" class="text-gray-700 hover:text-gray-900">장바구니</a></li>
+                    <li class="py-2"><a href="./MyPost.html" class="text-gray-700 hover:text-gray-900">나의 글</a></li>
+                    <li class="py-2"><a href="./Scrap.html" class="text-gray-700 hover:text-gray-900">스크랩</a></li>
+                </ul>
+            </aside>
+
+            <main class="w-3/4 float-right">
+                <div class="bg-white shadow rounded-lg p-4">
+                    <h2 class="text-gray-700 font-semibold text-lg mb-4">주문목록</h2>
+                    <div class="overflow-x-auto">
+                        <table class="min-w-full">
+                            <thead>
+                            <tr class="text-left text-gray-600">
+                                <th class="py-2 px-4">제품사진</th>
+                                <th class="py-2 px-4">제품이름</th>
+                                <th class="py-2 px-4">사이즈</th>
+                                <th class="py-2 px-4">제품단가</th>
+                                <th class="py-2 px-4">제품수량</th>
+                                <th class="py-2 px-4">가격</th>
+                            </tr>
+                            </thead>
+                            <tbody class="text-gray-700">
+                            {{#orderInfoList}}
+                                <tr>
+                                    <td class="py-2 px-4"><img src="https://dummyimage.com/60x60/000/fff&text=Shirt"></td>
+                                    <td class="py-2 px-4">{{order.productName}}</td>
+                                    <td class="py-2 px-4">{{order.productSize}}</td>
+                                    <td class="py-2 px-4">{{order.productPrice}}</td>
+                                    <td class="py-2 px-4">{{order.orderCnt}}</td>
+                                    <td class="py-2 px-4">{{order.totalPrice}}</td>
+                                </tr>
+                                <script>showAddressInfo({{order.orderId}});</script>
+                                <tr class="address-row" data-order-id="{{order.orderId}}">
+                                    <td colspan="6">
+                                        <div class="address-info">
+                                            <div class="address-name">{{address.addName}}</div>
+                                            <div class="address-details">{{address.address}} ({{address.addDetail}})</div>
+                                            <div class="address-code">우편번호: {{address.addCode}}</div>
+                                            <div class="address-tel">전화번호: {{address.addTel}}</div>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            {{/orderInfoList}}
+                            </tbody>
+
+                        </table>
+                    </div>
+                </div>
+            </main>
+            <div class="clear-both"></div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-100 py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 ColorFinder. All rights reserved.</p>
+        </div>
+    </footer>
+</div>
+
+<script>
+    window.onload = function () {
+        calculateTotalPrice();
+        showAddressInfo();
+    }
+
+    function calculateTotalPrice() {
+        let totalPrice = 0;
+        document.querySelectorAll('.price').forEach(function (priceElement) {
+            let price = parseFloat(priceElement.innerText.replace('₩', '').replace(/,/g, '').trim());
+            if (!isNaN(price)) {
+                totalPrice += price;
+            }
+        });
+        document.getElementById('total-price').innerText = `₩${totalPrice.toLocaleString()}`;
+    }
+
+    function showAddressInfo(orderId) {
+    document.write(orderId);
+    let beforeId = "1";
+
+    var element = document.querySelector('tr[data-order-id="' + orderId + '"]');
+    document.write(element);
+    if (element) {
+        element.style.display = 'none';
+    } else {
+        console.error("해당 주문 아이디를 가진 요소를 찾을 수 없습니다.");
+    }
+
+
+    <!--if (orderId === beforeId) {
+        element.style.display = 'none';
+    } else {
+        element.style.display = 'block';
+    }-->
+}
+
+
+
+</script>
+
+</body>
+</html>

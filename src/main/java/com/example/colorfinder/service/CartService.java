@@ -22,24 +22,6 @@ public class CartService {
     private final ProductRepository productRepository;
     private final CartRepository cartRepository;
 
-    /*public List<CartDTO> findCart() {
-        List<Integer> cartEntities = Arrays.asList(3, 5, 7, 11);
-        List<ProductEntity> products = productRepository.findAllById(cartEntities);
-
-        List<CartDTO> cartDTOList = new ArrayList<>();
-        for (ProductEntity productEntity : products) {
-            CartDTO cartDTO = new CartDTO();
-            // ProductEntity 정보를 CartDTO에 설정
-            cartDTO.setProductId(productEntity.getProductId());
-            cartDTO.setProductName(productEntity.getProductName());
-            cartDTO.setProductPrice(productEntity.getProductPrice());
-            cartDTO.setTotalPrice(productEntity.getProductPrice() * 10);
-
-            // CartDTO를 리스트에 추가
-            cartDTOList.add(cartDTO);
-        }
-        return cartDTOList;
-    }*/
 
     public List<CartDTO> findByUserId(Long userId){
         List<CartEntity> cartEntityList = cartRepository.findByUserId(userId);
@@ -60,6 +42,4 @@ public class CartService {
     public Long save(CartDTO cartDTO){
         return cartRepository.save(CartEntity.toCartEntity(cartDTO)).getCartId();
     }
-
-
 }

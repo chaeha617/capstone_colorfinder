@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,6 @@
           font-weight:200;
           font-size:19px;
           font-size:1.2rem;
-
         }
         .container {
           height:100%;
@@ -299,10 +298,13 @@
         .order-info-content {
           padding: 20px 5px; /* 여백 추가 */
         }
+        .hidden-form {
+            display: none; /* 또는 visibility: hidden; */
+        }
     </style>
 </head>
 
-<body class="bg-white text-gray-800 ">
+<body class="bg-white text-gray-800">
 <div class='container'>
     <div class='window'>
         <div class='order-info'>
@@ -313,11 +315,13 @@
                     <table class='order-table'>
                         <tbody>
                         <tr>
-                            <td><img src='https://dummyimage.com/60x60/000/fff&text=Shirt' class='full-width'></img>
-                            </td>
+                            <td><img src='https://dummyimage.com/60x60/000/fff&text=Shirt' class='full-width'></td>
                             <td>
                                 <span class='thin'>{{productName}}</span><br>
                                 <span class='thin small'>상품 사이즈 : {{productSize}} <br> 상품 수량 : {{cartCnt}}</span>
+                                <form class="hidden-form">
+                                    <input type="hidden" name="hidden-field" value="{{cartId}}">
+                                </form>
                             </td>
                             <td>
                                 <div class='price'>₩ {{totalPrice}}</div>
@@ -329,64 +333,80 @@
                 <div class='line'></div>
                 <div class='total'>
                     <span style='float:left;'> TOTAL </span>
-                    <span id='total-price' style='float:right; text-align:right;'> $0.00 </span>
+                    <span id='total-price' style='float:right; text-align:right;'>₩0</span>
                 </div>
             </div>
         </div>
 
-
-        <!--차후에 카카오페이 이미지로 수정 예정-->
         <div class='credit-info'>
             <div class='credit-info-content'>
-                <table class='half-input-table'>
-                    <tr><td>Please select your card: </td><td><div class='dropdown' id='card-dropdown'><div class='dropdown-btn' id='current-card'>Visa</div>
-                        <div class='dropdown-select'>
-                            <ul>
-                                <li>Master Card</li>
-                                <li>American Express</li>
-                            </ul></div>
+                <h2>Shipping Information</h2>
+                <form id="cart-form" action="/cart/pay/saveInfo" method="post">
+                    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
+                    <input type='text' name='addressName' class='input-field' placeholder='주소지명' value="{{address.addName}}">
+
+                    <input type='text' name='postalCode' class='input-field' placeholder='우편번호' value="{{address.addCode}}">
+                    <div th:if="${validationErrors != null and not #strings.isEmpty(validationErrors)}">
+                        <ul>
+                            <li th:each="error : ${validationErrors}">
+                                <span th:text="${error.value}"></span>
+                            </li>
+                        </ul>
                     </div>
-                    </td></tr>
-                </table>
-                <img src='https://dl.dropboxusercontent.com/s/ubamyu6mzov5c80/visa_logo%20%281%29.png' height='80' class='credit-card-image' id='credit-card-image'></img>
-                Card Number
-                <input class='input-field'></input>
-                Card Holder
-                <input class='input-field'></input>
-                <table class='half-input-table'>
-                    <tr>
-                        <td> Expires
-                            <input class='input-field'></input>
-                        </td>
-                        <td>CVC
-                            <input class='input-field'></input>
-                        </td>
-                    </tr>
-                </table>
-                <button class='pay-btn'>Checkout</button>
 
+                    <input type='text' name='roadAddress' class='input-field' placeholder='도로명주소' value="{{address.address}}">
+                    <div th:if="${validationErrors != null and not #strings.isEmpty(validationErrors)}">
+                        <ul>
+                            <li th:each="error : ${validationErrors}">
+                                <span th:text="${error.value}"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <input type='text' name='detailAddress' class='input-field' placeholder='세부 주소' value="{{address.addDetail}}">
+                    <input type='text' name='phoneNumber' class='input-field' placeholder='전화번호' value="{{address.addTel}}">
+                    <div th:if="${validationErrors != null and not #strings.isEmpty(validationErrors)}">
+                        <ul>
+                            <li th:each="error : ${validationErrors}">
+                                <span th:text="${error.value}"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <input type='hidden' name='selectedProductIds' id='selectedProductIds'>
+                    <button type="button" class="pay-btn" onclick="checkout()">결제하기</button>
+                </form>
             </div>
-
         </div>
     </div>
 </div>
+
 <script>
-    // JavaScript를 사용하여 각 주문의 총 가격을 계산하고 출력하는 함수
+    // 주문 목록 페이지 로드 시 실행되는 함수입니다.
     window.onload = function () {
         calculateTotalPrice();
     }
 
+    // 주문 목록에서 선택된 상품의 ID를 수집하여 폼에 추가하는 함수입니다.
+    function checkout() {
+        let selectedProductIds = [];
+        document.querySelectorAll('.hidden-form input[name="hidden-field"]').forEach(function(hidden) {
+            selectedProductIds.push(hidden.value);
+        });
+        document.getElementById('selectedProductIds').value = selectedProductIds.join(',');
+        document.getElementById('cart-form').submit();
+    }
+
+    // 주문 총액을 계산하여 화면에 표시하는 함수입니다. (기존 함수와 동일)
     function calculateTotalPrice() {
         let totalPrice = 0;
-        // 각 주문의 총 가격을 더합니다.
         document.querySelectorAll('.price').forEach(function (priceElement) {
-            totalPrice += parseFloat(priceElement.innerText.replace('₩', '').trim());
+            let price = parseFloat(priceElement.innerText.replace('₩', '').replace(/,/g, '').trim());
+            if (!isNaN(price)) {
+                totalPrice += price;
+            }
         });
-        // 총 가격을 화면에 출력합니다.
-        document.getElementById('total-price').innerText = `₩ ${totalPrice}`;
+        document.getElementById('total-price').innerText = `₩${totalPrice.toLocaleString()}`;
     }
 </script>
 
 </body>
-
 </html>
