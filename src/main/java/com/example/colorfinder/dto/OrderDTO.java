@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
+import java.text.DecimalFormat;
 import java.time.LocalDateTime;
 
 @Getter
@@ -31,6 +32,9 @@ public class OrderDTO {
     private String productSize;
     private String productName;
     private Integer productPrice;
+    private String imageUrl;
+    private String priceFormat;
+    private String totalFormat;
 
 
     public static OrderDTO toOrderDTO(OrderEntity orderEntity){
@@ -49,6 +53,13 @@ public class OrderDTO {
         orderDTO.setProductId(orderEntity.getProduct().getProductId());
         orderDTO.setProductName(orderEntity.getProduct().getProductName());
         orderDTO.setProductPrice(orderEntity.getProduct().getProductPrice());
+
+        DecimalFormat idFormat = new DecimalFormat("000");
+        orderDTO.setImageUrl("/static/CrawligData/"+ orderEntity.getProduct().getCateId()+idFormat.format(orderEntity.getProduct().getProductId())+".jpg");
+
+        DecimalFormat commaFormat = new DecimalFormat("#,###,##0");
+        orderDTO.setPriceFormat(commaFormat.format(orderEntity.getProduct().getProductPrice()));
+        orderDTO.setTotalFormat(commaFormat.format(orderEntity.getTotalPrice()));
 
         return orderDTO;
     }

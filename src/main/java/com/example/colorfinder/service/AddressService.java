@@ -20,28 +20,13 @@ public class AddressService {
     @Autowired
     private AddressRepository addressRepository;
 
-    public List<AddressDTO> findByUserId(Long userId){
-        List<AddressEntity> addressEntityList = addressRepository.findByUserId(userId);
-        List<AddressDTO> addressDTOList = new ArrayList<>();
-        for (AddressEntity addressEntity : addressEntityList){
-            addressDTOList.add(AddressDTO.toAddressDTO(addressEntity));
-        }
-        return addressDTOList;
-    }
-
-    public AddressDTO findById(Long addId) {
-        AddressEntity addressEntity = addressRepository.findById(addId).orElse(null);
-        if (addressEntity != null) {
-            return AddressDTO.toAddressDTO(addressEntity);
-        } else {
-            return null;
-        }
-    }
-
     public AddressDTO findMinAddIdByUserId(Long userId) {
         Long minAddId = addressRepository.findMinAddIdByUserId(userId);
-        AddressEntity addressEntity = addressRepository.findById(minAddId).orElse(null);
-        return mapToAddressDTO(addressEntity);
+        if (minAddId != null) {
+            AddressEntity addressEntity = addressRepository.findById(minAddId).orElse(null);
+            return mapToAddressDTO(addressEntity);
+        }
+        return null;
     }
 
     // AddressEntity를 AddressDTO로 매핑하는 메서드

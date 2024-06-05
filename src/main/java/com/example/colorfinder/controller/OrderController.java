@@ -40,11 +40,13 @@ public class OrderController {
     @RequestMapping(value = "/cart/pay/saveInfo", method = RequestMethod.POST)
     public String saveCartList(@RequestParam("selectedProductIds") String selectedProductIds,
                                @RequestParam("addressName") String addressName,
-                               @RequestParam("postalCode") Integer postalCode,
+                               @RequestParam("postalCode") String postalCode,
                                @RequestParam("roadAddress") String roadAddress,
                                @RequestParam("detailAddress") String detailAddress,
                                @RequestParam("phoneNumber") String phoneNumber,
                                Model model) {
+
+        System.out.println("$$$$$$$$$$$$$$$$$$" + addressName + postalCode + roadAddress);
 
         Long userId = null;
         try{
@@ -59,9 +61,9 @@ public class OrderController {
         if (addressName == null || addressName.trim().isEmpty()) {
             validationErrors.put("addressNameError", "이름은 필수 입력 값입니다.");
         }
-        if (postalCode == null) {
+        if (roadAddress == null || roadAddress.trim().isEmpty()) {
             validationErrors.put("postalCodeError", "우편번호는 필수 입력 값입니다.");
-        } else if (!postalCode.toString().matches("\\d{5}")) {
+        } else if (!postalCode.matches("\\d{5}")) {
             validationErrors.put("postalCodeError", "우편번호는 5자리 숫자여야 합니다.");
         }
         if (roadAddress == null || roadAddress.trim().isEmpty()) {
@@ -111,7 +113,7 @@ public class OrderController {
 
 
         // 폼 내용이 기본 주소랑 같으면 newAddId를 기본 addID로, 다르면 새칼럼 생성
-        Long newAddId = (existingAddressDTO.equals(addressDTO)) ? existingAddressDTO.getAddId() : addressService.saveAddress(addressDTO);
+        Long newAddId = (existingAddressDTO != null && existingAddressDTO.equals(addressDTO)) ? existingAddressDTO.getAddId() : addressService.saveAddress(addressDTO);
 
         // userId에 저장된 addId 중에 가장 작은 addId 가져오기
         /*addid = addressService.findMinAddIdByUserId(id);*/
@@ -128,7 +130,7 @@ public class OrderController {
             order.setOrderStatus("배송전");
             order.setTotalPrice(cartDTO.getTotalPrice());
             order.setProductSize(cartDTO.getProductSize());
-            order.setAddId(newAddId); //수정필요
+            order.setAddId(newAddId);
             order.setProduct(product);
             order.setUserId(cartDTO.getUserId());
 

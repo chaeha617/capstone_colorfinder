@@ -22,7 +22,7 @@ public class AddressEntity {
     private String addName;
 
     @Column(name = "addCode", nullable = false)
-    private Integer addCode;
+    private String addCode;
 
     @Column(name = "address", nullable = false)
     private String address;

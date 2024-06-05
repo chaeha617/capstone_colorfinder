@@ -73,12 +73,14 @@
                                 {{#cartList}}
                                     <tr>
                                         <td class="py-2 px-4"><input type="checkbox" name="select-product" value="{{cartId}}"></td>
-                                        <td class="py-2 px-4"><img src="https://dummyimage.com/60x60/000/fff&text=Shirt"></td>
+                                        <td class="py-2 px-4">
+                                            <img src="{{imageUrl}}" alt="Product Image" style="max-width: 100px; max-height: 100px;">
+                                        </td>
                                         <td class="py-2 px-4">{{productName}}</td>
                                         <td class="py-2 px-4">{{productSize}}</td>
-                                        <td class="py-2 px-4">{{productPrice}}</td>
+                                        <td class="py-2 px-4">{{priceFormat}}</td>
                                         <td class="py-2 px-4">{{cartCnt}}</td>
-                                        <td class="py-2 px-4">{{totalPrice}}</td>
+                                        <td class="py-2 px-4">{{totalFormat}}</td>
                                     </tr>
                                 {{/cartList}}
                                 </tbody>

@@ -254,6 +254,7 @@
         }
         .credit-info-content {
           margin-top:25px;
+          margin-bottom: 0;
           -webkit-flex-flow:column;
               -ms-flex-flow:column;
                   flex-flow:column;
@@ -324,7 +325,7 @@
                                 </form>
                             </td>
                             <td>
-                                <div class='price'>₩ {{totalPrice}}</div>
+                                <div class='price'>₩ {{totalFormat}}</div>
                             </td>
                         </tr>
                         </tbody>
@@ -343,37 +344,14 @@
                 <h2>Shipping Information</h2>
                 <form id="cart-form" action="/cart/pay/saveInfo" method="post">
                     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}">
-                    <input type='text' name='addressName' class='input-field' placeholder='주소지명' value="{{address.addName}}">
-
-                    <input type='text' name='postalCode' class='input-field' placeholder='우편번호' value="{{address.addCode}}">
-                    <div th:if="${validationErrors != null and not #strings.isEmpty(validationErrors)}">
-                        <ul>
-                            <li th:each="error : ${validationErrors}">
-                                <span th:text="${error.value}"></span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <input type='text' name='roadAddress' class='input-field' placeholder='도로명주소' value="{{address.address}}">
-                    <div th:if="${validationErrors != null and not #strings.isEmpty(validationErrors)}">
-                        <ul>
-                            <li th:each="error : ${validationErrors}">
-                                <span th:text="${error.value}"></span>
-                            </li>
-                        </ul>
-                    </div>
-                    <input type='text' name='detailAddress' class='input-field' placeholder='세부 주소' value="{{address.addDetail}}">
-                    <input type='text' name='phoneNumber' class='input-field' placeholder='전화번호' value="{{address.addTel}}">
-                    <div th:if="${validationErrors != null and not #strings.isEmpty(validationErrors)}">
-                        <ul>
-                            <li th:each="error : ${validationErrors}">
-                                <span th:text="${error.value}"></span>
-                            </li>
-                        </ul>
-                    </div>
+                    <input type='text' name='addressName' class='input-field' placeholder='주소지명' value="{{#address.addName}}{{address.addName}}{{/address.addName}}{{^address.addName}}{{/address.addName}}">
+                    <input type='text' name='postalCode' class='input-field' placeholder='우편번호' value="{{#address.addCode}}{{address.addCode}}{{/address.addCode}}{{^address.addCode}}{{/address.addCode}}">
+                    <input type='text' name='roadAddress' class='input-field' placeholder='도로명주소' value="{{#address.address}}{{address.address}}{{/address.address}}{{^address.address}}{{/address.address}}">
+                    <input type='text' name='detailAddress' class='input-field' placeholder='세부 주소' value="{{#address.addDetail}}{{address.addDetail}}{{/address.addDetail}}{{^address.addDetail}}{{/address.addDetail}}">
+                    <input type='text' name='phoneNumber' class='input-field' placeholder='전화번호' value="{{#address.addTel}}{{address.addTel}}{{/address.addTel}}{{^address.addTel}}{{/address.addTel}}">
                     <input type='hidden' name='selectedProductIds' id='selectedProductIds'>
-                    <button type="button" class="pay-btn" onclick="checkout()">결제하기</button>
                 </form>
+                <button type="button" class="pay-btn" onclick="checkout()">결제하기</button>
             </div>
         </div>
     </div>

@@ -56,6 +56,7 @@ public class CartController {
         List<Long> ids = Arrays.stream(selectedProductIds.split(","))
                 .map(Long::parseLong)
                 .collect(Collectors.toList());
+
         List<CartDTO> orderList = cartService.findByCartIds(ids);
         AddressDTO addressDTO = addressService.findMinAddIdByUserId(userId);
 

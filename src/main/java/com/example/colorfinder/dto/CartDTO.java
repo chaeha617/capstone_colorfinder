@@ -22,6 +22,10 @@ public class CartDTO {
     private String productName;
     private Integer productPrice;
     private Integer totalPrice;
+    private String imageUrl;
+    private String priceFormat;
+    private String totalFormat;
+
 
     //private String formatPrice;
 
@@ -36,8 +40,13 @@ public class CartDTO {
         cartDTO.setTotalPrice(cartEntity.getProduct().getProductPrice() * cartEntity.getCartCnt());
         cartDTO.setUserId(cartEntity.getUserId());
 
-        //DecimalFormat priceFormat = new DecimalFormat("#,###,##0");
-        //cartDTO.setFormatPrice(priceFormat.format(cartEntity.getProduct().getProductPrice()));
+        DecimalFormat idFormat = new DecimalFormat("000");
+        cartDTO.setImageUrl("/static/CrawligData/"+ cartEntity.getProduct().getCateId()+idFormat.format(cartEntity.getProduct().getProductId())+".jpg");
+
+        DecimalFormat commaFormat = new DecimalFormat("#,###,##0");
+        cartDTO.setPriceFormat(commaFormat.format(cartEntity.getProduct().getProductPrice()));
+        cartDTO.setTotalFormat(commaFormat.format(cartEntity.getProduct().getProductPrice() * cartEntity.getCartCnt()));
+
         return cartDTO;
     }
 }
