@@ -27,6 +27,14 @@
         .tab:hover {
             color: black;
         }
+        .bg-red-500 {
+          background-color: #e3342f; /* 기본 빨간색 */
+        }
+
+        .hover\:bg-red-700:hover {
+          background-color: #cc1f1a; /* 호버 시 어두운 빨간색 */
+        }
+
     </style>
 </head>
 
@@ -44,13 +52,10 @@
             <aside class="w-1/4 float-left">
                 <ul class="bg-blue shadow rounded-lg p-4">
                     <li class="py-2"><a href="/cart/pay/saveInfo" class="text-gray-700 hover:text-gray-900">주문목록</a></li>
-                    <li class="py-2"><a href="./InformationUpdate.html" class="text-gray-700 hover:text-gray-900">정보수정</a></li>
+                    <li class="py-2"><a href="/USERS/update" class="text-gray-700 hover:text-gray-900">정보수정</a></li>
                     <li class="py-2"><a href="/cart" class="tab font-semibold">장바구니</a></li>
-                    <li class="py-2"><a href="./MyPost.html" class="text-gray-700 hover:text-gray-900">나의 글</a></li>
-                    <li class="py-2"><a href="./Scrap.html" class="text-gray-700 hover:text-gray-900">스크랩</a></li>
                 </ul>
             </aside>
-
             <main class="w-3/4 float-right">
                 <div class="bg-white shadow rounded-lg p-4">
                     <h2 class="text-gray-700 font-semibold text-lg mb-4">장바구니</h2>
@@ -88,8 +93,12 @@
                         </div>
                         <div class="flex justify-between items-center mt-4">
                             <span class="text-lg">총액: <span id="total-price">0원</span></span>
-                            <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="checkout()">구매하기</button>
+                            <div>
+                                <button type="button" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" onclick="deleteItems()">삭제하기</button>
+                                <button type="button" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-4" onclick="checkout()">구매하기</button>
+                            </div>
                         </div>
+
                     </form>
                 </div>
             </main>
@@ -143,6 +152,41 @@
         document.getElementById('selectedProductIds').value = selectedProductIds.join(',');
         document.getElementById('cart-form').submit();
     }
+
+    function deleteItems() {
+    let selectedProducts = [];
+    document.querySelectorAll('input[name="select-product"]:checked').forEach(function(checkbox) {
+        selectedProducts.push(checkbox.value);
+    });
+
+    if (selectedProducts.length === 0) {
+        alert("최소한 하나의 상품을 선택해야 합니다.");
+        return;
+    }
+
+    fetch('/cart/delete', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(selectedProducts) // 바디에 배열 전달
+    })
+    .then(response => {
+        if (response.ok) {
+            location.reload();
+        } else {
+            alert("상품 삭제에 실패했습니다.");
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert("상품 삭제 중 오류가 발생했습니다.");
+    });
+}
+
+
+
+
 </script>
 
 </body>

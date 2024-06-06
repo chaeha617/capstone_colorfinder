@@ -46,8 +46,6 @@ public class OrderController {
                                @RequestParam("phoneNumber") String phoneNumber,
                                Model model) {
 
-        System.out.println("$$$$$$$$$$$$$$$$$$" + addressName + postalCode + roadAddress);
-
         Long userId = null;
         try{
             Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
@@ -76,8 +74,6 @@ public class OrderController {
         }
 
         if (!validationErrors.isEmpty()) {
-            System.out.println(validationErrors);
-
             // orderList와 addressDTO 정보를 다시 불러오기
             List<Long> ids = Arrays.stream(selectedProductIds.split(","))
                     .map(Long::parseLong)
@@ -114,9 +110,6 @@ public class OrderController {
 
         // 폼 내용이 기본 주소랑 같으면 newAddId를 기본 addID로, 다르면 새칼럼 생성
         Long newAddId = (existingAddressDTO != null && existingAddressDTO.equals(addressDTO)) ? existingAddressDTO.getAddId() : addressService.saveAddress(addressDTO);
-
-        // userId에 저장된 addId 중에 가장 작은 addId 가져오기
-        /*addid = addressService.findMinAddIdByUserId(id);*/
 
         Long orderId = orderService.findMaxAddIdByUserId(userId) + 1;
         // order테이블에 데이터 저장
