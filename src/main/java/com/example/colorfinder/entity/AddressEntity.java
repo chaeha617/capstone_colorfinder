@@ -16,6 +16,7 @@ import lombok.*;
 public class AddressEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "addId")
     private Long addId;
 
     @Column(name = "addName", nullable = false)
@@ -33,7 +34,7 @@ public class AddressEntity {
     @Column(name = "addTel", nullable = false)
     private String addTel;
 
-    @Column(nullable = false)
+    @Column(name = "userId",nullable = false)
     private Long userId;
 
 
