@@ -1,9 +1,11 @@
 package com.example.colorfinder.controller;
 
+import com.example.colorfinder.dto.AddressDTO;
 import com.example.colorfinder.dto.CartDTO;
 import com.example.colorfinder.dto.ProductDTO;
 import com.example.colorfinder.entity.CartEntity;
 import com.example.colorfinder.entity.USERS;
+import com.example.colorfinder.service.AddressService;
 import com.example.colorfinder.service.CartService;
 import com.example.colorfinder.service.ProductService;
 import com.example.colorfinder.service.UserService;
@@ -14,12 +16,14 @@ import org.apache.catalina.User;
 import org.springframework.expression.spel.ast.NullLiteral;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.task.DelegatingSecurityContextAsyncTaskExecutor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
@@ -40,6 +44,7 @@ import org.w3c.dom.NodeList;
 public class ProductController {
 
     private final ProductService productService;
+    private final AddressService addressService;
     private final UserService userService;
     private final CartService cartService;
 
@@ -164,23 +169,37 @@ public class ProductController {
         }catch (Exception e){
             return "redirect:/login";
         }
+        Long cartId = 0L;
         ProductDTO product = productService.findById(productId);
+        List<CartDTO> allreadyList = cartService.findByUserId(userId).stream().filter(cartDTO -> cartDTO.getProductId().equals(productId)&&cartDTO.getProductSize().equals(productSize)).collect(Collectors.toList());
+        if (allreadyList.isEmpty()) {
+            CartDTO cart = new CartDTO();
+            cart.setCartCnt(productCnt);
+            cart.setProductSize(productSize);
+            cart.setProductId(productId);
+            cart.setUserId(userId);
+            cart.setProduct(product);
+            cart.setProductName(product.getProductName());
+            cart.setTotalPrice(product.getProductPrice() * productCnt);
+            cartId = cartService.save(cart);
+        }else{
+                if (action.equals("cart")){
+                    cartId =  cartService.update(allreadyList.get(0).getCartId(), allreadyList.get(0).getCartCnt() +  productCnt);
+                }else if (action.equals("order")){
+                    cartId = cartService.update(allreadyList.get(0).getCartId(), productCnt);
+                }
+        }
 
-        CartDTO cart = new CartDTO();
-        cart.setCartCnt(productCnt);
-        cart.setProductSize(productSize);
-        cart.setProductId(productId);
-        cart.setUserId(userId);
-        cart.setProduct(product);
-        cart.setProductName(product.getProductName());
-        cart.setTotalPrice(product.getProductPrice() * productCnt);
-
-        Long cartId = cartService.save(cart);
 
         if (action.equals("cart")){
             return "redirect:/cart";
         }else if (action.equals("order")){
-            model.addAttribute("orderList", cart);
+            List<Long> ids = new ArrayList<>(Collections.singleton(cartId));
+            List<CartDTO> orderList = cartService.findByCartIds(ids);
+            AddressDTO addressDTO = addressService.findMinAddIdByUserId(userId);
+
+            model.addAttribute("orderList", orderList);
+            model.addAttribute("address", addressDTO);
             return "payFor";
         }
 
