@@ -9,6 +9,8 @@ import com.example.colorfinder.service.CartService;
 import com.example.colorfinder.service.OrderService;
 import com.example.colorfinder.service.ProductService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
@@ -64,4 +66,20 @@ public class CartController {
         model.addAttribute("address", addressDTO);
         return "payFor";
     }
+
+    @PostMapping("/cart/delete")
+    @ResponseBody
+    public String deleteCartItems(@RequestBody List<Long> productIds) {
+        try {
+            // 상품 삭제
+            for (Long productId : productIds) {
+                orderService.deleteCartById(productId); // orderService에서 cartService로 변경
+            }
+            return "Success";
+        } catch (Exception e) {
+            e.printStackTrace();
+            return "Error";
+        }
+    }
+
 }
