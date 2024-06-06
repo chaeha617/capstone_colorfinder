@@ -43,7 +43,7 @@
             <aside class="w-1/4 float-left">
                 <ul class="bg-blue shadow rounded-lg p-4">
                     <li class="py-2"><a href="./OrderList.html" class="text-gray-700 hover:text-gray-900">주문목록</a></li>
-                    <a href="/USERS/{{userId}}/update" class="tab font-semibold">정보수정</a>
+                    <a href="/USERS/update?userId={{userId}}" class="tab font-semibold">정보수정</a>
                     <li class="py-2"><a href="./Cart.html" class="text-gray-700 hover:text-gray-900">장바구니</a></li>
                     <li class="py-2"><a href="./MyPost.html" class="text-gray-700 hover:text-gray-900">나의 글</a></li>
                     <li class="py-2"><a href="./Scrap.html" class="text-gray-700 hover:text-gray-900">스크랩</a></li>
@@ -86,15 +86,12 @@
     </main>
 </div>
 <script>
-    // Submit 버튼 클릭 시 실행되는 함수
     document.getElementById('submitButton').addEventListener('click', function() {
-        // 사용자 ID 가져오기
-        var userId = "{{userId}}";
-        // 폼 action 속성에 동적으로 URL 설정
-        document.getElementById('updateUserForm').action = "/users/" + {{userId}} + "/update";
-        // 폼 제출
-        document.getElementById('updateUserForm').submit();
-    });
+    var userId = "{{userId}}";
+    document.getElementById('updateUserForm').action = "/users/update?userId=" + userId;
+    document.getElementById('updateUserForm').submit();
+});
+
 
     document.addEventListener("DOMContentLoaded", function() {
         // 사용자의 퍼스널 컬러 값에 따라 올바른 단어를 선택하여 출력
