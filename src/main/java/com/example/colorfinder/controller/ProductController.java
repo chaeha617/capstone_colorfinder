@@ -47,6 +47,7 @@ public class ProductController {
             @RequestParam(name = "personalcolor", defaultValue = "ALL") String personalcolor,
             @RequestParam(name = "sortBy", defaultValue = "id") String sortBy,
             @RequestParam(name = "search", defaultValue = "*") String searchWord,
+            @RequestParam(name = "testTemp", defaultValue = "*") String testTemp,
             Model model)
     throws  ClassNotFoundException, SQLException{
 
@@ -117,127 +118,45 @@ public class ProductController {
 
         //기상청 API에서 기온 불러오기
         int temp = 0;
-        temp = getTemp();
+        try{
+            temp = Integer.parseInt(testTemp);
+        }catch (Exception e){
+            temp = getTemp();
+        }
         model.addAttribute("temp",temp);
 
+        int finalTemp = Math.max(Math.min(temp / 5 * 5, 25),1);
         //유저에게 맞는 제품 추천(기온 + 퍼컬)
         if (user != null){
-            int finalTemp = temp;
             if (user.getPersonalColor().getColorId()!=null){
                 USERS finalUser = user;
                 userRecommendList = userRecommendList.stream()
-                        .filter(product -> product.getColorId().equals(finalUser.getPersonalColor().getColorId()) && product.getTemp() < finalTemp)
+                        .filter(product -> product.getColorId().equals(finalUser.getPersonalColor().getColorId()) && product.getTemp()>=finalTemp&& product.getTemp()< finalTemp + 5)
                         .collect(Collectors.toList());
             }else {
                 userRecommendList = userRecommendList.stream()
-                        .filter(product -> product.equals(product.getTemp() < finalTemp))
+                        .filter(product -> product.getTemp()>=finalTemp&& product.getTemp()< finalTemp + 5)
                         .collect(Collectors.toList());
             }
-        }
-        if(userRecommendList.size() > 5){
-            userRecommendList = userRecommendList.subList(0,5);
-        }
-        model.addAttribute("userRecommendList", userRecommendList);
-
-        return "productlist";
-    }
-
-    @RequestMapping("/colorfinderTestTemp")
-    public String testTemp(
-            @RequestParam(name = "cate", defaultValue = "ALL") String category,
-            @RequestParam(name = "personalcolor", defaultValue = "ALL") String personalcolor,
-            @RequestParam(name = "sortBy", defaultValue = "id") String sortBy,
-            @RequestParam(name = "search", defaultValue = "*") String searchWord,
-            @RequestParam(name = "Temp", defaultValue = "0") String Temp,
-            Model model)
-            throws  ClassNotFoundException, SQLException{
-
-        String userPersonalcolor = "퍼스널컬러를 진단하여 알아보세요!";
-        Long userId = null;
-        USERS user = null;
-        //로그인 확인
-        try{
-            Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-            userId = Long.parseLong(authentication.getName());
-
-            user = userService.getUserById(userId);
-            System.out.println(user.getPersonalColor());
-            if (user.getPersonalColor().getColorName()!=null){
-                userPersonalcolor = user.getPersonalColor().getColorName();
-            }
-        }catch (Exception e){
-            System.out.println("비회원");
-        }
-        model.addAttribute("userPersonalColor", userPersonalcolor);
-
-        //로그인한 회원 퍼스널컬러 추출
-
-        //상품목록 생성
-        List<ProductDTO> productDTOList = new ArrayList<>();
-
-        //category 필터링 하는 부분
-        if (category.equals("ALL")) {
-            productDTOList = productService.findAll();
         }else {
-            productDTOList = productService.findByCateId(category);
-        }
-
-        List<ProductDTO> userRecommendList = productDTOList;
-
-        //personalcolor 필터링 하는 부분
-        if (!personalcolor.equals("ALL") && !productDTOList.isEmpty()) {
-            try {
-                productDTOList = productDTOList.stream()
-                        .filter(product -> product.getColorId().equals(personalcolor))
-                        .collect(Collectors.toList());
-
-            }catch (Exception e){
-                System.out.println(e);
-                productDTOList.clear();
-            }
-        }
-
-        //검색
-        if (!searchWord.equals("*") && !productDTOList.isEmpty()) {
-            final String searchLowerCase = searchWord.toLowerCase();
-            System.out.println(searchLowerCase);
-            productDTOList = productDTOList.stream()
-                    .filter(product -> product.getProductName().toLowerCase().contains(searchLowerCase))
+            userRecommendList = userRecommendList.stream()
+                    .filter(product -> product.getTemp()>=finalTemp&& product.getTemp()< finalTemp + 5)
                     .collect(Collectors.toList());
         }
 
-        //정렬하는 부분
-        if (sortBy.equals("lowPrice")) {
-            productDTOList = productDTOList.stream().sorted(Comparator.comparing(ProductDTO::getProductPrice)).collect(Collectors.toList());
-        } else if (sortBy.equals("highPrice")) {
-            productDTOList = productDTOList.stream().sorted(Comparator.comparing(ProductDTO::getProductPrice).reversed()).collect(Collectors.toList());
-        }else{
-            productDTOList = productDTOList.stream().sorted(Comparator.comparing(ProductDTO::getProductId)).collect(Collectors.toList());
-        }
-        model.addAttribute("productList", productDTOList);
-
-
-        //기상청 API에서 기온 불러오기
-        int temp = Integer.parseInt(Temp);
-        model.addAttribute("temp",temp);
-
-        //유저에게 맞는 제품 추천(기온 + 퍼컬)
-        if (user != null){
-            int finalTemp = temp;
-            if (user.getPersonalColor().getColorId()!=null){
-                USERS finalUser = user;
-                userRecommendList = userRecommendList.stream()
-                        .filter(product -> product.getColorId().equals(finalUser.getPersonalColor().getColorId()) && product.getTemp() < finalTemp)
-                        .collect(Collectors.toList());
-            }else {
-                userRecommendList = userRecommendList.stream()
-                        .filter(product -> product.equals(product.getTemp() < finalTemp))
-                        .collect(Collectors.toList());
-            }
-        }
         if(userRecommendList.size() > 5){
-            userRecommendList = userRecommendList.subList(0,5);
+            List<ProductDTO> randList = new ArrayList<>();
+            List<Integer> rand = new ArrayList<>();
+            while(rand.size() < 5){
+                int random = (int) (Math.random() * userRecommendList.size());
+                if (!rand.contains(random)){
+                    rand.add(random);
+                    randList.add(userRecommendList.get(random));
+                }
+            }
+            userRecommendList = randList;
         }
+
         model.addAttribute("userRecommendList", userRecommendList);
 
         return "productlist";
