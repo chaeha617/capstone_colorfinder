@@ -55,8 +55,7 @@
 ### 회원가입 & 로그인
 <div style="text-align: center;">
   <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/회원가입.png" alt="회원가입" width="40%" style="margin: 0 10px;" />
-  <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/로그인.png" alt="로그인" width="40%" style="margin: 0 10px;" />
-</div>
+  <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/회원가입.png" alt="로그인" width="40%" style="margin: 0 10px;" /></div>
 
 <p>이메일, 비밀번호, 닉네임, 퍼스널 컬러, 성별 정보를 받아 회원 가입을 진행합니다.<br>
 회원가입 시 퍼스널 컬러 진단, 맞춤형 의류 추천 서비스 사용이 가능합니다.<br>
