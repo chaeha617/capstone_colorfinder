@@ -54,7 +54,7 @@
 
 ### 회원가입 & 로그인
 <div style="text-align: center;">
-  <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/%ED%9A%8C%EB%AA%85%EA%B0%80%EC%9E%85.png" alt="회원가입" width="40%" style="margin: 0 10px;" />
+  <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/회원가입.png" alt="회원가입" width="40%" style="margin: 0 10px;" />
   <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/%EB%A1%9C%EA%B7%B8%EC%9D%B8.png" alt="로그인" width="40%" style="margin: 0 10px;" />
 </div>
 
