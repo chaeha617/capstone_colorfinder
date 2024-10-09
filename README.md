@@ -56,9 +56,11 @@
   <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/회원가입.png" alt="회원가입" width="70%" style="margin: 0 10px;" />
   <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/로그인.png" alt="로그인" width="70%" style="margin: 0 10px;" /></div>
 
+<br>
 <p>이메일, 비밀번호, 닉네임, 퍼스널 컬러, 성별 정보를 받아 회원 가입을 진행합니다.<br>
 회원가입 시 퍼스널 컬러 진단, 맞춤형 의류 추천 서비스 사용이 가능합니다.<br>
 퍼스널 컬러와 성별을 선택하지 않은 채 회원가입 진행도 가능합니다.</p>
+
 
 * * *
 
@@ -66,7 +68,7 @@
 <div style="text-align: center;">
   <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/진단1.png" alt="진단1" width="70%" style="margin: 0 10px;" />
   <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/진단2.png" alt="진단2" width="70%" style="margin: 0 10px;" /></div>
-
+<br>
 <p>사용자는 <strong>이미지 파일</strong>을 업로드하여 퍼스널 컬러 진단을 진행할 수 있습니다.<br>
 봄 웜톤, 여름 쿨톤, 가을 웜톤, 겨울 쿨톤의 <strong>4가지 퍼스널 컬러</strong>로 진단됩니다.<br>
 진단 결과를 저장할 경우, 유저 정보에 해당 정보가 저장됩니다.</p>
