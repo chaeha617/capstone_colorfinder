@@ -65,8 +65,8 @@
 
 ### 퍼스널 컬러 진단
 <div style="text-align: center;">
-  <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/진단1.png" alt="진단1" width="60%" style="margin: 0 10px;" />
-  <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/진단2.png" alt="진단2" width="60%" style="margin: 0 10px;" /></div>
+  <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/진단1.png" alt="진단1" width="50%" style="margin: 0 10px;" />
+  <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/진단2.png" alt="진단2" width="50%" style="margin: 0 10px;" /></div>
 
 <p>사용자는 이미지 파일을 업로드하여 퍼스널 컬러 진단을 진행할 수 있습니다.<br>
 봄 웜톤, 여름 쿨톤, 가을 웜톤, 겨울 쿨톤의 4가지 퍼스널 컬러로 진단됩니다.<br>
