@@ -55,7 +55,7 @@
 ### 회원가입 & 로그인
 <div style="text-align: center;">
   <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/회원가입.png" alt="회원가입" width="40%" style="margin: 0 10px;" />
-  <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/회원가입.png" alt="로그인" width="40%" style="margin: 0 10px;" /></div>
+  <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/로그인.png" alt="로그인" width="40%" style="margin: 0 10px;" /></div>
 
 <p>이메일, 비밀번호, 닉네임, 퍼스널 컬러, 성별 정보를 받아 회원 가입을 진행합니다.<br>
 회원가입 시 퍼스널 컬러 진단, 맞춤형 의류 추천 서비스 사용이 가능합니다.<br>
@@ -65,9 +65,8 @@
 
 ### 퍼스널 컬러 진단
 <div style="text-align: center;">
-  <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/%EC%A7%84%EB%8B%A8%EC%9E%90%201.png" alt="진단1" width="40%" style="margin: 0 10px;" />
-  <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/%EC%A7%84%EB%8B%A8%EC%9E%90%202.png" alt="진단2" width="40%" style="margin: 0 10px;" />
-</div>
+  <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/진단1.png" alt="진단1" width="40%" style="margin: 0 10px;" />
+  <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/진단2.png" alt="진단2" width="40%" style="margin: 0 10px;" /></div>
 
 <p>사용자는 이미지 파일을 업로드하여 퍼스널 컬러 진단을 진행할 수 있습니다.<br>
 봄 웜톤, 여름 쿨톤, 가을 웜톤, 겨울 쿨톤의 4가지 퍼스널 컬러로 진단됩니다.<br>
@@ -104,7 +103,7 @@
 
 <div style="text-align: center;">
   <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/장바구니.png" alt="장바구니" width="40%" style="margin: 0 10px;" />
-  <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/구매하기.png" alt="구매하기" width="40%" style="margin: 0 10px;" />
+<img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/구매하기.png" alt="구매하기" width="40%" style="margin: 0 10px;" />
 </div>
 
 <hr style="border: 2px solid #d3d3d3; margin: 20px 0;">
