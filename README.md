@@ -51,8 +51,7 @@
 <h2> ✨ 주요 기능 </h2>
 
 * * *
-
-### 회원가입 & 로그인
+<h3><span style="color: #87CEEB;">회원가입 & 로그인</span></h3>
 <div style="text-align: center;">
   <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/회원가입.png" alt="회원가입" width="70%" style="margin: 0 10px;" />
   <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/로그인.png" alt="로그인" width="70%" style="margin: 0 10px;" /></div>
@@ -63,19 +62,20 @@
 
 * * *
 
-### 퍼스널 컬러 진단
+<h3><span style="color: #87CEEB;">퍼스널 컬러 진단</span></h3>
 <div style="text-align: center;">
   <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/진단1.png" alt="진단1" width="70%" style="margin: 0 10px;" />
   <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/진단2.png" alt="진단2" width="70%" style="margin: 0 10px;" /></div>
 
-<p>사용자는 이미지 파일을 업로드하여 퍼스널 컬러 진단을 진행할 수 있습니다.<br>
-봄 웜톤, 여름 쿨톤, 가을 웜톤, 겨울 쿨톤의 4가지 퍼스널 컬러로 진단됩니다.<br>
+<p>사용자는 <strong>이미지 파일</strong>을 업로드하여 퍼스널 컬러 진단을 진행할 수 있습니다.<br>
+봄 웜톤, 여름 쿨톤, 가을 웜톤, 겨울 쿨톤의 <strong>4가지 퍼스널 컬러</strong>로 진단됩니다.<br>
 진단 결과를 저장할 경우, 유저 정보에 해당 정보가 저장됩니다.</p>
 
 * * *
 
-### 사용자 정보 맞춤형 의류 추천
-<p>퍼스널 컬러, 기온 정보를 기반으로 한 의류 추천 기능입니다.</p>
+<h3><span style="color: #87CEEB;">사용자 정보 맞춤형 의류 추천</span></h3>
+
+<p><strong>퍼스널 컬러</strong>, <strong>기온</strong> 정보를 기반으로 한 의류 추천 기능입니다.</p>
 
 <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/추천1.png" alt="추천1" width="70%" style="margin: 0 10px;" />
 <p>퍼스널 컬러 정보가 없을 경우, 비로그인 상태일 경우 기온 정보로 추천합니다.</p>
@@ -83,11 +83,12 @@
 <img src="https://github.com/chaeha617/capstone_colorfinder/blob/master/README/추천2.png" alt="추천2" width="70%" style="margin: 0 10px;" />
 <p>퍼스널 컬러 정보가 있을 경우, 퍼스널 컬러와 기온 정보로 추천합니다.</p>
 
+<br>
+
 ![gif](https://github.com/chaeha617/capstone_colorfinder/blob/master/README/영상.gif)
 
 * * *
-
-### 의류 필터링 & 정렬
+<h3><span style="color: #87CEEB;">의류 필터링 & 정렬</span></h3>
 <p>모든 의류는 퍼스널 컬러, 카테고리 별로 필터링이 가능합니다.<br>
 인기순, 최신순, 저가순, 고가순으로 정렬이 가능합니다.
 </p>
@@ -96,7 +97,7 @@
 
 * * *
 
-### 장바구니 & 구매하기
+<h3><span style="color: #87CEEB;">장바구니 & 구매하기</span></h3>
 <p>장바구니 버튼을 눌렀을 경우 제품 이름, 수량, 사이즈 등의 정보가 장바구니에 들어갑니다.<br>
 구매하기 기능을 진행할 경우 선택한 상품들 주문 목록에 추가됩니다.
 </p>
